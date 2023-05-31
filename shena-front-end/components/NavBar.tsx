@@ -21,7 +21,8 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
-  
+  import Image from 'next/image';
+
   export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
   
@@ -50,14 +51,9 @@ import {
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-            <Text
-              textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-              fontFamily={'heading'}
-              color={useColorModeValue('gray.800', 'white')}>
-              Logo
-            </Text>
-  
+          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} >
+  <Image src="/images/shena-logo.jpeg"  alt=''height={144}
+              width={100}/>
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
@@ -74,7 +70,7 @@ import {
               fontWeight={400}
               variant={'link'}
               href={'#'}>
-              Sign In
+              Book appointment
             </Button>
             <Button
               as={'a'}
@@ -87,7 +83,7 @@ import {
               _hover={{
                 bg: 'pink.300',
               }}>
-              Sign Up
+              Book
             </Button>
           </Stack>
         </Flex>
@@ -105,7 +101,7 @@ import {
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
   
     return (
-      <Stack direction={'row'} spacing={4}>
+      <Stack direction={'row'} spacing={4} mt={10} >
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -114,7 +110,7 @@ import {
                   p={2}
                   href={navItem.href ?? '#'}
                   fontSize={'sm'}
-                  fontWeight={500}
+                  fontWeight={900}
                   color={linkColor}
                   _hover={{
                     textDecoration: 'none',
