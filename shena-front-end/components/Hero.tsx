@@ -28,20 +28,21 @@ import {
               color={'white'}
               fontWeight={700}
               lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
+              fontSize={useBreakpointValue({ base: '3xl', md: '6xl' })}>
              Beauty is our duty
             </Text>
             <Stack direction={'row'}>
               <Button
-                bg={'blue.400'}
-                rounded={'full'}
-                color={'white'}
-                _hover={{ bg: 'blue.500' }}>
-                Show me more
+                bg={'yellow.400'}
+                // rounded={'full'}
+                color={'white.100'}
+                _hover={{ bg: 'yellow.500' }}>
+                  
+                  Book Now
               </Button>
               <Button
                 bg={'whiteAlpha.300'}
-                rounded={'full'}
+                // rounded={'full'}
                 color={'white'}
                 _hover={{ bg: 'whiteAlpha.500' }}>
                 Show me more

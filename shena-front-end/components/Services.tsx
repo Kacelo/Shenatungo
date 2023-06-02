@@ -53,7 +53,7 @@ import {
               {description}
             </Text>
           </Box>
-          <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+          <Button variant={'link'} color={'yellow.500'} size={'sm'}>
             Learn more
           </Button>
         </Stack>
@@ -69,7 +69,7 @@ import {
             Our Services
           </Heading>
           <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-          Welcome to our vibrant world of beauty and cosmetics! At our exceptional website, we offer a delightful array of services and products designed to elevate your personal style and enhance your natural charm. Step into our enchanting realm and discover a harmonious fusion of artistry, expertise, and top-notch customer care.
+          {/* Welcome to our vibrant world of beauty and cosmetics! At our exceptional website, we offer a delightful array of services and products designed to elevate your personal style and enhance your natural charm. Step into our enchanting realm and discover a harmonious fusion of artistry, expertise, and top-notch customer care. */}
           </Text>
         </Stack>
   
