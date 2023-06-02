@@ -78,12 +78,12 @@ import {
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
-              bg={'pink.400'}
+              bg={'yellow.400'}
               href={'#'}
               _hover={{
-                bg: 'pink.300',
+                bg: 'yellow.400',
               }}>
-              Book
+              Call Now
             </Button>
           </Stack>
         </Flex>
@@ -150,12 +150,12 @@ import {
         display={'block'}
         p={2}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+        _hover={{ bg: useColorModeValue('yellow.50', 'gray.900') }}>
         <Stack direction={'row'} align={'center'}>
           <Box>
             <Text
               transition={'all .3s ease'}
-              _groupHover={{ color: 'pink.400' }}
+              _groupHover={{ color: 'yellow.400' }}
               fontWeight={500}>
               {label}
             </Text>
@@ -169,7 +169,7 @@ import {
             justify={'flex-end'}
             align={'center'}
             flex={1}>
-            <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+            <Icon color={'yellow.400'} w={5} h={5} as={ChevronRightIcon} />
           </Flex>
         </Stack>
       </Link>
@@ -248,41 +248,34 @@ import {
   
   const NAV_ITEMS: Array<NavItem> = [
     {
-      label: 'Inspiration',
+      label: 'Home',
+      href: '/',
+    },
+    {
+      label: 'Services',
       children: [
         {
-          label: 'Explore Design Work',
-          subLabel: 'Trending Design to inspire you',
-          href: '#',
+          label: 'Barber Shop',
+          subLabel: '',
+          href: '/barbershop',
         },
         {
-          label: 'New & Noteworthy',
-          subLabel: 'Up-and-coming Designers',
+          label: 'Hair Salon',
+          subLabel: '',
           href: '#',
         },
       ],
     },
     {
-      label: 'Find Work',
-      children: [
-        {
-          label: 'Job Board',
-          subLabel: 'Find your dream design job',
-          href: '#',
-        },
-        {
-          label: 'Freelance Projects',
-          subLabel: 'An exclusive list for contract work',
-          href: '#',
-        },
-      ],
-    },
-    {
-      label: 'Learn Design',
+      label: 'Products',
       href: '#',
     },
     {
-      label: 'Hire Designers',
+      label: 'Gallery',
+      href: '#',
+    },
+    {
+      label: 'Contact Us',
       href: '#',
     },
   ];
