@@ -65,7 +65,7 @@ const EmployeeCards: React.FC<ServicesProps> = ({ employees, openingText }) => {
 interface CardProps {
   heading: string;
   phoneNumber: string;
-  socialMedia: string[];
+  socialMedia: string;
   imageSrc: string;
 }
 
@@ -75,6 +75,10 @@ const Card: React.FC<CardProps> = ({ heading, phoneNumber, socialMedia, imageSrc
         const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
       };
+      const openInsta = () =>{
+        const url = socialMedia;
+        window.open(url, '_blank');
+      }
   return (
     <Box
       maxW={{ base: 'full', md: '275px' }}
@@ -87,14 +91,14 @@ const Card: React.FC<CardProps> = ({ heading, phoneNumber, socialMedia, imageSrc
       <Stack align={'start'} spacing={2}>
         <Flex
           w={236}
-          h={156}
+          h={236}
           align={'center'}
           justify={'center'}
           color={'white'}
           bg={useColorModeValue('white', 'gray.700')}
         >
             {imageSrc ? <Image src={imageSrc}  alt=''height={236}
-              width={236}/> : ''} 
+              width={'-webkit-fill-available'}/> : ''} 
           {/* Place your employee image or icon here */}
         </Flex>
         <Box mt={2}>
@@ -102,9 +106,10 @@ const Card: React.FC<CardProps> = ({ heading, phoneNumber, socialMedia, imageSrc
           <Text mt={1} fontSize={'sm'}>
             Phone: {phoneNumber}
           </Text>
-          <Text mt={1} fontSize={'sm'}>
-            Social Media: {socialMedia.join(', ')}
-          </Text>
+          <div onClick={openInsta} style={{cursor: "pointer" }}>
+             {socialMedia ? <Image src={'/images/instagram.png'}  alt=''height={23}
+              width={23}/> : ''}
+          </div>
         </Box>
         <Button  backgroundColor={'#ECC94B'} color={'white'} size={'sm'} onClick={openWhatsApp}>
           Book Appointment

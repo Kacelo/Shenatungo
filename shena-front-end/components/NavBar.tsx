@@ -32,7 +32,7 @@ import {
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
-          py={{ base: 2 }}
+          // py={{ base: 2 }}
           px={{ base: 4 }}
           borderBottom={1}
           borderStyle={'solid'}
@@ -53,7 +53,7 @@ import {
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} >
   <Image src="/images/shena-logo.jpeg"  alt=''height={144}
-              width={100}/>
+              width={100} style={{mixBlendMode: "darken"}}/>
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
