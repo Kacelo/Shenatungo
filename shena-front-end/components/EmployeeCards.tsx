@@ -106,7 +106,7 @@ const Card: React.FC<CardProps> = ({ heading, phoneNumber, socialMedia, imageSrc
             Social Media: {socialMedia.join(', ')}
           </Text>
         </Box>
-        <Button  backgroundColor={'#ECC94B'} color={'white'} size={'sm'} onClick={openWhatsApp}>
+        <Button  backgroundColor={'#D1B000'} color={'white'} size={'sm'} onClick={openWhatsApp}>
           Book Appointment
         </Button>
       </Stack>

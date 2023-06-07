@@ -53,7 +53,7 @@ import {
               {description}
             </Text>
           </Box>
-          <Button variant={'link'} color={'yellow.500'} size={'sm'}>
+          <Button variant={'link'} color={'#D1B000'} size={'sm'}>
             Learn more
           </Button>
         </Stack>
