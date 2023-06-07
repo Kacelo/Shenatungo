@@ -1,3 +1,5 @@
+import React from 'react'
+
 import {
     Box,
     Flex,
@@ -21,8 +23,7 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
-  import Image from 'next/image';
-
+  
   export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
   
@@ -32,7 +33,7 @@ import {
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
-          // py={{ base: 2 }}
+          py={{ base: 2 }}
           px={{ base: 4 }}
           borderBottom={1}
           borderStyle={'solid'}
@@ -51,9 +52,14 @@ import {
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} >
-  <Image src="/images/shena-logo.jpeg"  alt=''height={144}
-              width={100} style={{mixBlendMode: "darken"}}/>
+          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+            <Text
+              textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+              fontFamily={'heading'}
+              color={useColorModeValue('gray.800', 'white')}>
+              Logo
+            </Text>
+  
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
@@ -69,9 +75,8 @@ import {
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
-              href={'#'}
-              display={{base: 'inline-flex', md: 'none'}}>
-              Book appointment
+              href={'#'}>
+              Sign In
             </Button>
             <Button
               as={'a'}
@@ -79,12 +84,12 @@ import {
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
-              bg={'#D1B000'}
+              bg={'pink.400'}
               href={'#'}
               _hover={{
-                bg: 'yellow.400',
+                bg: 'pink.300',
               }}>
-              Book Appointment
+              Sign Up
             </Button>
           </Stack>
         </Flex>
@@ -102,7 +107,7 @@ import {
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
   
     return (
-      <Stack direction={'row'} spacing={4} mt={10} >
+      <Stack direction={'row'} spacing={4}>
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -111,7 +116,7 @@ import {
                   p={2}
                   href={navItem.href ?? '#'}
                   fontSize={'sm'}
-                  fontWeight={900}
+                  fontWeight={500}
                   color={linkColor}
                   _hover={{
                     textDecoration: 'none',
@@ -151,12 +156,12 @@ import {
         display={'block'}
         p={2}
         rounded={'md'}
-        _hover={{ bg: useColorModeValue('yellow.50', 'gray.900') }}>
+        _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
         <Stack direction={'row'} align={'center'}>
           <Box>
             <Text
               transition={'all .3s ease'}
-              _groupHover={{ color: 'yellow.400' }}
+              _groupHover={{ color: 'pink.400' }}
               fontWeight={500}>
               {label}
             </Text>
@@ -170,7 +175,7 @@ import {
             justify={'flex-end'}
             align={'center'}
             flex={1}>
-            <Icon color={'yellow.400'} w={5} h={5} as={ChevronRightIcon} />
+            <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
           </Flex>
         </Stack>
       </Link>
@@ -190,93 +195,100 @@ import {
     );
   };
   
-  const MobileNavItem = ({ label, children, href }: NavItem) => {
-    const { isOpen, onToggle } = useDisclosure();
+  // const MobileNavItem = ({ label, children, href }: NavItem) => {
+  //   const { isOpen, onToggle } = useDisclosure();
   
-    return (
-      <Stack spacing={4} onClick={children && onToggle}>
-        <Flex
-          py={2}
-          as={Link}
-          href={href ?? '#'}
-          justify={'space-between'}
-          align={'center'}
-          _hover={{
-            textDecoration: 'none',
-          }}>
-          <Text
-            fontWeight={600}
-            color={useColorModeValue('gray.600', 'gray.200')}>
-            {label}
-          </Text>
-          {children && (
-            <Icon
-              as={ChevronDownIcon}
-              transition={'all .25s ease-in-out'}
-              transform={isOpen ? 'rotate(180deg)' : ''}
-              w={6}
-              h={6}
-            />
-          )}
-        </Flex>
+  //   return (
+  //     <Stack spacing={4} onClick={children && onToggle}>
+  //       <Flex
+  //         py={2}
+  //         as={Link}
+  //         href={href ?? '#'}
+  //         justify={'space-between'}
+  //         align={'center'}
+  //         _hover={{
+  //           textDecoration: 'none',
+  //         }}>
+  //         <Text
+  //           fontWeight={600}
+  //           color={useColorModeValue('gray.600', 'gray.200')}>
+  //           {label}
+  //         </Text>
+  //         {children && (
+  //           <Icon
+  //             as={ChevronDownIcon}
+  //             transition={'all .25s ease-in-out'}
+  //             transform={isOpen ? 'rotate(180deg)' : ''}
+  //             w={6}
+  //             h={6}
+  //           />
+  //         )}
+  //       </Flex>
   
-        <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
-          <Stack
-            mt={2}
-            pl={4}
-            borderLeft={1}
-            borderStyle={'solid'}
-            borderColor={useColorModeValue('gray.200', 'gray.700')}
-            align={'start'}>
-            {children &&
-              children.map((child) => (
-                <Link key={child.label} py={2} href={child.href}>
-                  {child.label}
-                </Link>
-              ))}
-          </Stack>
-        </Collapse>
-      </Stack>
-    );
-  };
+  //       <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
+  //         <Stack
+  //           mt={2}
+  //           pl={4}
+  //           borderLeft={1}
+  //           borderStyle={'solid'}
+  //           borderColor={useColorModeValue('gray.200', 'gray.700')}
+  //           align={'start'}>
+  //           {children &&
+  //             children.map((child) => (
+  //               <Link key={child.label} py={2} href={child.href}>
+  //                 {child.label}
+  //               </Link>
+  //             ))}
+  //         </Stack>
+  //       </Collapse>
+  //     </Stack>
+  //   );
+  // };
   
-  interface NavItem {
-    label: string;
-    subLabel?: string;
-    children?: Array<NavItem>;
-    href?: string;
-  }
+  // interface NavItem {
+  //   label: string;
+  //   subLabel?: string;
+  //   children?: Array<NavItem>;
+  //   href?: string;
+  // }
   
-  const NAV_ITEMS: Array<NavItem> = [
-    {
-      label: 'Home',
-      href: '/',
-    },
-    {
-      label: 'Services',
-      children: [
-        {
-          label: 'Barber Shop',
-          subLabel: '',
-          href: '/barbershop',
-        },
-        {
-          label: 'Hair Salon',
-          subLabel: '',
-          href: '#',
-        },
-      ],
-    },
-    {
-      label: 'Products',
-      href: '#',
-    },
-    {
-      label: 'Gallery',
-      href: '#',
-    },
-    {
-      label: 'Contact Us',
-      href: '#',
-    },
-  ];
+  // const NAV_ITEMS: Array<NavItem> = [
+  //   {
+  //     label: 'Inspiration',
+  //     children: [
+  //       {
+  //         label: 'Explore Design Work',
+  //         subLabel: 'Trending Design to inspire you',
+  //         href: '#',
+  //       },
+  //       {
+  //         label: 'New & Noteworthy',
+  //         subLabel: 'Up-and-coming Designers',
+  //         href: '#',
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     label: 'Find Work',
+  //     children: [
+  //       {
+  //         label: 'Job Board',
+  //         subLabel: 'Find your dream design job',
+  //         href: '#',
+  //       },
+  //       {
+  //         label: 'Freelance Projects',
+  //         subLabel: 'An exclusive list for contract work',
+  //         href: '#',
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     label: 'Learn Design',
+  //     href: '#',
+  //   },
+  //   {
+  //     label: 'Hire Designers',
+  //     href: '#',
+  //   },
+  // ];

@@ -33,7 +33,7 @@ import {
               color={'#D1B000'}
               fontWeight={700}
               lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: '3xl', md: '7xl' })}>
+              fontSize={useBreakpointValue({ base: '3xl', md: '9xl' })}>
             {introText}
             </Text>
           </Stack>

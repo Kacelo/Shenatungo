@@ -7,30 +7,33 @@ import HorizontalRule from "@/components/HorizontalRule";
 export default function Barbershop() {
   const employeesData = [
     {
-      name: "John Doe",
-      phoneNumber: "+1 123-456-7890",
-      socialMedia: ["Twitter", "LinkedIn"],
-      imageSrc: ''
+      name: "Lebby",
+      phoneNumber: "+264814504952",
+      socialMedia:"https://www.instagram.com/lebby_z_fade_cutz_/",
+      imageSrc: '/images/barberSection/lebby.jpeg',
+      instagramHandle:'@lebby_z_fade_cutz',
+
     },
     {
       name: "Jane Smith",
       phoneNumber: "+1 987-654-3210",
-      socialMedia: ["Facebook", "Instagram"],
-      imageSrc: ''
-
+      socialMedia: "",
+      imageSrc: '',
+      instagramHandle:'@lebby_z_fade_cutz'
     },
     {
       name: "David Johnson",
       phoneNumber: "+1 555-123-4567",
-      socialMedia: ["LinkedIn", "Twitter"],
-      imageSrc: ''
-
+      socialMedia: "",
+      imageSrc: '',
+      instagramHandle:'@lebby_z_fade_cutz'
     },
     {
       name: "Emily Davis",
       phoneNumber: "+1 777-888-9999",
-      socialMedia: ["Instagram", "Facebook"],
-      imageSrc: ''
+      socialMedia: "",
+      imageSrc: '',
+      instagramHandle:'@lebby_z_fade_cutz'
     },
   ];
   const introductoryMessage = [
@@ -43,32 +46,37 @@ export default function Barbershop() {
     {
       id: 1,
       title: 'Fade',
-      text: '60',
+      text: '80',
     },
     {
       id: 2,
-      title: 'Chiskop',
+      title: 'Brush Cut',
       text: '80',
     },
     {
       id: 3,
-      title: 'Panga',
-      text: '90',
+      title: 'Taper Fade',
+      text: '80',
     },
     {
       id: 4,
-      title: 'Trim',
+      title: 'Trim & Beard Trim',
       text: '40',
     },
     {
       id: 5,
-      title: 'Beard & Trim',
-      text: '60',
+      title: 'Beard Trim',
+      text: '30',
     },
     {
       id: 6,
-      title: 'Dye and cut',
-      text: '220',
+      title:'Hair Dye/Coloring or Highlights ',
+      text: '80',
+    },
+    {
+      id: 7,
+      title: 'Bold',
+      text: '70',
     },
     // Add more hairstyle objects as needed
   ];
@@ -76,22 +84,22 @@ export default function Barbershop() {
     {
       src: '/images/barberSection/IMG_1788.JPG',
       alt: 'Image 2',
-      caption: 'Beautiful scenery',
+      caption: 'Fade',
     },
     {
       src: '/images/barberSection/IMG_1798.JPG',
       alt: 'Image 2',
-      caption: 'Stunning architecture',
+      caption: 'Beard Trim',
     },
     {
       src: '/images/barberSection/IMG_1754.JPG',
       alt: 'Image 2',
-      caption: 'Stunning architecture',
+      caption: 'Trimming',
     },
     // Add more image objects as needed
   ];
     return (<>
-        <ServicesHero imageUrl ="/images/services/barber-card.JPG" introText="BARBER SHOP" />
+        <ServicesHero imageUrl ="/images/services/barber-card.JPG" introText="BARBERSHOP" />
     <EmployeeCards employees={employeesData} openingText={introductoryMessage} />
     <HorizontalRule />
     <PriceList hairstyles={hairstylesData} />
