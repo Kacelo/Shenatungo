@@ -10,27 +10,30 @@ export default function Barbershop() {
       name: "Lebby",
       phoneNumber: "+264814504952",
       socialMedia:"https://www.instagram.com/lebby_z_fade_cutz_/",
-      imageSrc: '/images/barberSection/lebby.jpeg'
+      imageSrc: '/images/barberSection/lebby.jpeg',
+      instagramHandle:'@lebby_z_fade_cutz',
+
     },
     {
       name: "Jane Smith",
       phoneNumber: "+1 987-654-3210",
       socialMedia: "",
-      imageSrc: ''
-
+      imageSrc: '',
+      instagramHandle:'@lebby_z_fade_cutz'
     },
     {
       name: "David Johnson",
       phoneNumber: "+1 555-123-4567",
       socialMedia: "",
-      imageSrc: ''
-
+      imageSrc: '',
+      instagramHandle:'@lebby_z_fade_cutz'
     },
     {
       name: "Emily Davis",
       phoneNumber: "+1 777-888-9999",
       socialMedia: "",
-      imageSrc: ''
+      imageSrc: '',
+      instagramHandle:'@lebby_z_fade_cutz'
     },
   ];
   const introductoryMessage = [
@@ -96,7 +99,7 @@ export default function Barbershop() {
     // Add more image objects as needed
   ];
     return (<>
-        <ServicesHero imageUrl ="/images/services/barber-card.JPG" introText="BARBER SHOP" />
+        <ServicesHero imageUrl ="/images/services/barber-card.JPG" introText="BARBERSHOP" />
     <EmployeeCards employees={employeesData} openingText={introductoryMessage} />
     <HorizontalRule />
     <PriceList hairstyles={hairstylesData} />

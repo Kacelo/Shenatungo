@@ -69,7 +69,8 @@ import {
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
-              href={'#'}>
+              href={'#'}
+              display={{base: 'inline-flex', md: 'none'}}>
               Book appointment
             </Button>
             <Button
@@ -78,12 +79,12 @@ import {
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
-              bg={'yellow.400'}
+              bg={'#D1B000'}
               href={'#'}
               _hover={{
                 bg: 'yellow.400',
               }}>
-              Call Now
+              Book Appointment
             </Button>
           </Stack>
         </Flex>

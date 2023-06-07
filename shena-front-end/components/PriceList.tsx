@@ -37,7 +37,7 @@ const PriceList: React.FC<PriceListProps> = ({ hairstyles }) => {
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
           {hairstyles.map((hairstyle) => (
             <HStack key={hairstyle.id} align={'top'}>
-              <Box color={'green.400'} px={2}>
+              <Box color={'#D1B000'} px={2}>
                 <Icon as={CheckIcon} />
               </Box>
               <VStack align={'start'}>
@@ -49,9 +49,9 @@ const PriceList: React.FC<PriceListProps> = ({ hairstyles }) => {
         </SimpleGrid>
         <br></br>
         <Button
-                bg={'yellow.400'}
+                bg={'#D1B000'}
                 // rounded={'full'}
-                color={'yellow.800'}
+                color={'white'}
                 _hover={{ bg: 'whiteAlpha.500' }}>
                   Download Price List
               </Button>

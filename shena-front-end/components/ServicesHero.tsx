@@ -10,7 +10,7 @@ import {
     imageUrl: string;
     introText: string;
   }
-  
+  import { smythe } from './fonts';
   const ServicesHero: React.FC<HeroProps> = ({ imageUrl, introText }) =>  {
 
     return (
@@ -29,10 +29,11 @@ import {
           bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
           <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
             <Text
-              color={'white'}
+            className={smythe.className}
+              color={'#D1B000'}
               fontWeight={700}
               lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: '3xl', md: '6xl' })}>
+              fontSize={useBreakpointValue({ base: '3xl', md: '9xl' })}>
             {introText}
             </Text>
           </Stack>

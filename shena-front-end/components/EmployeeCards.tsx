@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Box,
   Stack,
@@ -10,19 +10,20 @@ import {
   Container,
   Icon,
   useColorModeValue,
-} from '@chakra-ui/react';
-import { FcAssistant, FcCollaboration, FcDonate } from 'react-icons/fc';
+} from "@chakra-ui/react";
+import { FcAssistant, FcCollaboration, FcDonate } from "react-icons/fc";
 
 interface Employee {
   name: string;
   phoneNumber: string;
-  socialMedia: string[];
+  socialMedia: string;
   imageSrc: string;
+  instagramHandle: string;
 }
 interface Welcome {
-    headingText: string;
-    meetOur: string;
-  }
+  headingText: string;
+  meetOur: string;
+}
 
 interface ServicesProps {
   employees: Employee[];
@@ -31,21 +32,20 @@ interface ServicesProps {
 
 const EmployeeCards: React.FC<ServicesProps> = ({ employees, openingText }) => {
   return (
-    <Box p={4} marginTop={'20'}>
-      <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-        <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
-        {openingText.map((text)=>{
-            return text.headingText
-        })}
+    <Box p={4} marginTop={"20"}>
+      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
+        <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
+          {openingText.map((text) => {
+            return text.headingText;
+          })}
         </Heading>
-        <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-        {openingText.map((text)=>{
-            return text.meetOur
-        })}        
+        <Text color={"gray.600"} fontSize={{ base: "sm", sm: "lg" }}>
+          {openingText.map((text) => {
+            return text.meetOur;
+          })}
         </Text>
       </Stack>
-
-      <Container maxW={'5xl'} mt={12}>
+      <Container maxW={"5xl"} mt={12}>
         <Flex flexWrap="wrap" gridGap={12} justify="center">
           {employees.map((employee, index) => (
             <Card
@@ -54,6 +54,7 @@ const EmployeeCards: React.FC<ServicesProps> = ({ employees, openingText }) => {
               phoneNumber={employee.phoneNumber}
               socialMedia={employee.socialMedia}
               imageSrc={employee.imageSrc}
+              instagramHandle={employee.instagramHandle}
             />
           ))}
         </Flex>
@@ -67,51 +68,95 @@ interface CardProps {
   phoneNumber: string;
   socialMedia: string;
   imageSrc: string;
+  instagramHandle: string;
 }
 
-const Card: React.FC<CardProps> = ({ heading, phoneNumber, socialMedia, imageSrc }) => {
-    const openWhatsApp = () => {
-        const message = 'Hello, I would like to book an appointment.';
-        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-        window.open(url, '_blank');
-      };
-      const openInsta = () =>{
-        const url = socialMedia;
-        window.open(url, '_blank');
-      }
+const Card: React.FC<CardProps> = ({
+  heading,
+  phoneNumber,
+  socialMedia,
+  imageSrc,
+  instagramHandle,
+}) => {
+  const openWhatsApp = () => {
+    const message = "Hello, I would like to book an appointment.";
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank");
+  };
+  const openInsta = () => {
+    const url = socialMedia;
+    window.open(url, "_blank");
+  };
   return (
     <Box
-      maxW={{ base: 'full', md: '275px' }}
-      w={'full'}
+      maxW={{ base: "full", md: "275px" }}
+      w={"full"}
       borderWidth="1px"
       borderRadius="sm"
       overflow="hidden"
       p={5}
     >
-      <Stack align={'start'} spacing={2}>
+      <Stack align={"start"} spacing={2}>
         <Flex
           w={236}
           h={236}
-          align={'center'}
-          justify={'center'}
-          color={'white'}
-          bg={useColorModeValue('white', 'gray.700')}
+          align={"center"}
+          justify={"center"}
+          color={"white"}
+          bg={useColorModeValue("white", "gray.700")}
+          style={{ width: "-webkit-fill-available !important" }}
         >
-            {imageSrc ? <Image src={imageSrc}  alt=''height={236}
-              width={'-webkit-fill-available'}/> : ''} 
+          {imageSrc ? (
+            <Image
+              src={imageSrc}
+              style={{ width: "-webkit-fill-available !important" }}
+              alt=""
+              height={236}
+              width={"-webkit-fill-available"}
+            />
+          ) : (
+            ""
+          )}
           {/* Place your employee image or icon here */}
         </Flex>
         <Box mt={2}>
           <Heading size="md">{heading}</Heading>
-          <Text mt={1} fontSize={'sm'}>
+          <Text mt={1} fontSize={"sm"}>
             Phone: {phoneNumber}
           </Text>
-          <div onClick={openInsta} style={{cursor: "pointer" }}>
-             {socialMedia ? <Image src={'/images/instagram.png'}  alt=''height={23}
-              width={23}/> : ''}
+          <div
+            onClick={openInsta}
+            style={{ cursor: "pointer", display: "flex" }}
+          >
+            {socialMedia ? (
+              <>
+                {" "}
+                <Image
+                  src={"/images/instagram.png"}
+                  alt=""
+                  height={23}
+                  width={23}
+                />
+                <Text fontSize={"sm"} mb={1} ml={1}>
+                  {instagramHandle}
+                </Text>
+              </>
+            ) : (
+              ""
+            )}
           </div>
         </Box>
-        <Button  backgroundColor={'#ECC94B'} color={'white'} size={'sm'} onClick={openWhatsApp}>
+        <Button
+          backgroundColor={"#D1B000"}
+          color={"white"}
+          size={"sm"}
+          onClick={openWhatsApp}
+          rightIcon={
+            <Image src={"/images/whatsapp.png"} alt="" height={5} width={5} />
+          }
+        >
           Book Appointment
         </Button>
       </Stack>
