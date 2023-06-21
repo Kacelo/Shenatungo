@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Navbar from '@/components/NavBar'
 import Hero from '@/components/Hero'
 import Intro from '@/components/Intro'
