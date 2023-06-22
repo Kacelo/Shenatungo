@@ -269,7 +269,7 @@ import {
     },
     {
       label: 'Products',
-      href: '#',
+      href: '/eShop',
     },
     {
       label: 'Gallery',
