@@ -24,7 +24,7 @@ export function DesktopNav() {
         ))}
 
         {/* <Search /> */}
-        {/* <Search/> */}
+        <Search/>
       </Stack>
 
       <Stack direction="row" spacing={2}>

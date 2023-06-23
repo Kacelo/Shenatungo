@@ -1,14 +1,18 @@
 import { Box } from '@chakra-ui/react';
 import { navbarStyles } from './style';
 import { DesktopNav } from './DesktopNav';
+import { MobileNav } from './MobileNav';
 // import { Search } from '../Search/Search';
 // import { DesktopNav } from './DesktopNav';
 // import { MobileNav } from './MobileNav';
 
 export const ENavbar = () => {
   return (
-    <Box {...navbarStyles}>Navigation
+    <Box className="navbar-wrapper" h="120px">
+    <Box {...navbarStyles}>
     <DesktopNav/>
+    <MobileNav/>
+    </Box>
     </Box>
     // <>
     //   <Box className="navbar-wrapper" h="120px">

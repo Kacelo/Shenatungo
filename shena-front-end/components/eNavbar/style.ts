@@ -11,9 +11,9 @@ export const navbarStyles: BoxProps = {
 export const desktopNavStyles: FlexProps = {
     justify: "space-between",
       align: "center",
-    //   display: {{ base: 'none', lg: 'flex' }},
       px:"2rem",
       py:"1rem",
       borderBottom: "1px",
-      borderColor:"gray.200"
+      borderColor:"gray.200",
+      display: { base: 'none', lg: 'flex' },
 }

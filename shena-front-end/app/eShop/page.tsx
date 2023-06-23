@@ -116,6 +116,7 @@ import { theme } from '../theme'
 //     </>);
 //   }
 import 'swiper/swiper.min.css';
+import { Banner } from "@/features/home/Banner";
 // import { ENavbar } from "@/components/eNavbar/ENavBar";
 // import AppContextProvider from '@src/context/AppContext';
 
@@ -131,6 +132,7 @@ export default function RootLayout({
           <ChakraProvider theme={theme}>
             {/* <AppContextProvider> */}
               <ENavbar/>
+              <Banner/>
               {children}
             {/* </AppContextProvider> */}
           </ChakraProvider>
