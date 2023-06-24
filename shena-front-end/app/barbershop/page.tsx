@@ -12,28 +12,25 @@ export default function Barbershop() {
       socialMedia:"https://www.instagram.com/lebby_z_fade_cutz_/",
       imageSrc: '/images/barberSection/lebby.jpeg',
       instagramHandle:'@lebby_z_fade_cutz',
+      whatsapp: true
+    },
+    {
+      name: "Penda",
+      phoneNumber: "+1 987-654-3210",
+      socialMedia: "",
+      imageSrc: '/images/barberSection/penda.jpg',
+      instagramHandle:'@lebby_z_fade_cutz',
+      whatsapp: false
 
     },
     {
-      name: "Jane Smith",
-      phoneNumber: "+1 987-654-3210",
-      socialMedia: "",
-      imageSrc: '',
-      instagramHandle:'@lebby_z_fade_cutz'
-    },
-    {
-      name: "David Johnson",
+      name: "Santos",
       phoneNumber: "+1 555-123-4567",
       socialMedia: "",
-      imageSrc: '',
-      instagramHandle:'@lebby_z_fade_cutz'
-    },
-    {
-      name: "Emily Davis",
-      phoneNumber: "+1 777-888-9999",
-      socialMedia: "",
-      imageSrc: '',
-      instagramHandle:'@lebby_z_fade_cutz'
+      imageSrc: '/images/barberSection/santos.jpg',
+      instagramHandle:'@lebby_z_fade_cutz',
+      whatsapp: true
+
     },
   ];
   const introductoryMessage = [
