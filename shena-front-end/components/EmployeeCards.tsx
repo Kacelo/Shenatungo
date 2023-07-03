@@ -20,7 +20,6 @@ interface Employee {
   imageSrc: string;
   instagramHandle: string;
   whatsapp: boolean;
-
 }
 interface Welcome {
   headingText: string;
@@ -73,7 +72,6 @@ interface CardProps {
   imageSrc: string;
   instagramHandle: string;
   whatsapp: boolean;
-
 }
 
 const Card: React.FC<CardProps> = ({
@@ -132,7 +130,10 @@ const Card: React.FC<CardProps> = ({
           {imageSrc ? (
             <Image
               src={imageSrc}
-              style={{ width: "-webkit-fill-available !important" }}
+              style={{
+                width: "-webkit-fill-available !important",
+                objectFit: "cover",
+              }}
               alt=""
               height={236}
               width={"-webkit-fill-available"}
@@ -165,7 +166,7 @@ const Card: React.FC<CardProps> = ({
                 </Text>
               </>
             ) : (
-              ""
+              <div style={{ margin: "25px 0 auto" }}></div>
             )}
           </div>
         </Box>
@@ -174,6 +175,7 @@ const Card: React.FC<CardProps> = ({
             backgroundColor={"#D1B000"}
             color={"white"}
             size={"sm"}
+            _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             onClick={openWhatsApp}
             rightIcon={
               <Image src={"/images/whatsapp.png"} alt="" height={5} width={5} />
@@ -186,6 +188,7 @@ const Card: React.FC<CardProps> = ({
             backgroundColor={"#D1B000"}
             color={"white"}
             size={"sm"}
+            _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             onClick={openPhoneMessenger}
           >
             Book Appointment via SMS

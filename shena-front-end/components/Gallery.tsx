@@ -18,7 +18,7 @@ GALLERY          </Heading>
         <GridItem key={index}>
           <Box position="relative">
             <Image src={image.src} alt={image.alt} width="100%" />
-            <Text
+            {/* <Text
               position="absolute"
               bottom={0}
               left={0}
@@ -32,7 +32,7 @@ GALLERY          </Heading>
               textAlign="center"
             >
               {image.caption}
-            </Text>
+            </Text> */}
           </Box>
         </GridItem>
       ))}
