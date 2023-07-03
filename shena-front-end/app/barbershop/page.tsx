@@ -10,30 +10,27 @@ export default function Barbershop() {
       name: "Lebby",
       phoneNumber: "+264814504952",
       socialMedia:"https://www.instagram.com/lebby_z_fade_cutz_/",
-      imageSrc: '/images/barberSection/lebby.jpeg',
+      imageSrc: '/images/barberSection/lebby2.jpeg',
       instagramHandle:'@lebby_z_fade_cutz',
+      whatsapp: true
+    },
+    {
+      name: "Penda",
+      phoneNumber: "+1 987-654-3210",
+      socialMedia: "",
+      imageSrc: '/images/barberSection/penda2.jpg',
+      instagramHandle:'@lebby_z_fade_cutz',
+      whatsapp: false
 
     },
     {
-      name: "Jane Smith",
-      phoneNumber: "+1 987-654-3210",
-      socialMedia: "",
-      imageSrc: '',
-      instagramHandle:'@lebby_z_fade_cutz'
-    },
-    {
-      name: "David Johnson",
+      name: "Santos",
       phoneNumber: "+1 555-123-4567",
       socialMedia: "",
-      imageSrc: '',
-      instagramHandle:'@lebby_z_fade_cutz'
-    },
-    {
-      name: "Emily Davis",
-      phoneNumber: "+1 777-888-9999",
-      socialMedia: "",
-      imageSrc: '',
-      instagramHandle:'@lebby_z_fade_cutz'
+      imageSrc: '/images/barberSection/santos2.jpg',
+      instagramHandle:'@lebby_z_fade_cutz',
+      whatsapp: true
+
     },
   ];
   const introductoryMessage = [
@@ -97,6 +94,11 @@ export default function Barbershop() {
       caption: 'Trimming',
     },
     // Add more image objects as needed
+    ...Array.from({ length: 6 }, (_, index) => ({
+      src: `/images/barberSection/photo_5805664601931629${422 + index}_y.jpg`,
+      alt: `Image ${index + 3}`,
+      caption: `Caption ${index + 3}`,
+    })),
   ];
     return (<>
         <ServicesHero imageUrl ="/images/services/barber-card.JPG" introText="BARBERSHOP" />
