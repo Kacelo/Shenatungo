@@ -35,7 +35,7 @@ export default function Barbershop() {
   ];
   const introductoryMessage = [
     {
-      headingText: "MEET OUR BARBERS",
+      headingText: "Our Expert Barber Team",
       meetOur: "",
     }
   ]
@@ -78,34 +78,45 @@ export default function Barbershop() {
     // Add more hairstyle objects as needed
   ];
   const images = [
-    {
-      src: '/images/barberSection/IMG_1788.JPG',
-      alt: 'Image 2',
-      caption: 'Fade',
-    },
-    {
-      src: '/images/barberSection/IMG_1798.JPG',
-      alt: 'Image 2',
-      caption: 'Beard Trim',
-    },
-    {
-      src: '/images/barberSection/IMG_1754.JPG',
-      alt: 'Image 2',
-      caption: 'Trimming',
-    },
+    // {
+    //   src: '/images/barberSection/IMG_1788.JPG',
+    //   alt: 'Image 2',
+    //   caption: 'Fade',
+    // },
+    // {
+    //   src: '/images/barberSection/IMG_1798.JPG',
+    //   alt: 'Image 2',
+    //   caption: 'Beard Trim',
+    // },
+    // {
+    //   src: '/images/barberSection/IMG_1754.JPG',
+    //   alt: 'Image 2',
+    //   caption: 'Trimming',
+    // },
     // Add more image objects as needed
     ...Array.from({ length: 6 }, (_, index) => ({
       src: `/images/barberSection/photo_5805664601931629${422 + index}_y.jpg`,
       alt: `Image ${index + 3}`,
       caption: `Caption ${index + 3}`,
     })),
+    ...Array.from({ length: 3 }, (_, index) => ({
+      src: `/images/barberSection/photo_6039493638116981${331 + index}_y.jpg`,
+      alt: `Image ${index + 3}`,
+      caption: `Caption ${index + 3}`,
+    })),
+    ...Array.from({ length: 3 }, (_, index) => ({
+      src: `/images/barberSection/photo_6039493638116981${325 + index}_y.jpg`,
+      alt: `Image ${index + 3}`,
+      caption: `Caption ${index + 3}`,
+    })),
   ];
     return (<>
-        <ServicesHero imageUrl ="/images/services/barber-card.JPG" introText="BARBERSHOP" />
+        <ServicesHero imageUrl ="/images/services/barber-card.JPG" introText="BARBERSHOP" headerImage="/images/barberSection/clippers.png" />
     <EmployeeCards employees={employeesData} openingText={introductoryMessage} />
     <HorizontalRule />
     <PriceList hairstyles={hairstylesData} />
     <HorizontalRule />
-    <Gallery images={images} />
+    <Gallery images={images} introText="Glimpse into Our Barbering Artistry"
+/>
     </>);
   }

@@ -27,7 +27,7 @@ const PriceList: React.FC<PriceListProps> = ({ hairstyles }) => {
   return (
     <Box p={4} mt={10}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading fontSize={"3xl"}>PRICE LIST</Heading>
+        <Heading fontSize={"3xl"}>Price List</Heading>
         <Text color={"gray.600"} fontSize={"xl"}>
           {/* Add your description here */}
         </Text>
@@ -41,8 +41,8 @@ const PriceList: React.FC<PriceListProps> = ({ hairstyles }) => {
                 <Icon as={CheckIcon} />
               </Box>
               <VStack align={"start"}>
-                <Text fontWeight={600}>{hairstyle.title}</Text>
-                <Text color={"gray.600"}>Price: N$ {hairstyle.text}</Text>
+                <Text fontWeight={600} fontSize={"xl"}>{hairstyle.title}</Text>
+                <Text color={"gray.600"} fontSize={"xl"}>Price: N$ {hairstyle.text}</Text>
               </VStack>
             </HStack>
           ))}

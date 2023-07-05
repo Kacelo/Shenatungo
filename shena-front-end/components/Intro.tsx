@@ -93,7 +93,7 @@ import {
               rounded={'md'}
               alt={'feature image'}
               src={
-                '/images/about-us.png'}
+                '/images/barberSection/photo_5805664601931629385_y.jpg'}
               objectFit={'cover'}
             />
           </Flex>

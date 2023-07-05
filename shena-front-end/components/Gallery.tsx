@@ -1,24 +1,45 @@
-import React from 'react';
-import { Box, Grid, GridItem, Heading, Image, Text, useBreakpointValue } from '@chakra-ui/react';
-import { size } from 'lodash';
+import React from "react";
+import {
+  Box,
+  Grid,
+  GridItem,
+  Heading,
+  Image,
+  Text,
+  useBreakpointValue,
+  Container,
+} from "@chakra-ui/react";
+import { size } from "lodash";
 
 interface GalleryProps {
   images: { src: string; alt: string; caption: string }[];
+  introText: string
 }
 
-const Gallery: React.FC<GalleryProps> = ({ images }) => {
-    const columnLayout = useBreakpointValue({ base: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' });
+const Gallery: React.FC<GalleryProps> = ({ images, introText }) => {
+  const columnLayout = useBreakpointValue({
+    base: "1fr",
+    sm: "repeat(2, 1fr)",
+    md: "repeat(3, 1fr)",
+  });
 
   return (
-    <Box p={4} marginTop={'20'} textAlign={'center'}>
-<Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'} padding={5}>
-GALLERY          </Heading>  
-    <Grid templateColumns={columnLayout} gap={3}>
-    {images.map((image, index) => (
-        <GridItem key={index}>
-          <Box position="relative">
-            <Image src={image.src} alt={image.alt} width="100%" />
-            {/* <Text
+    <Box p={4} marginTop={"20"} textAlign={"center"}>
+      <Heading
+        fontSize={{ base: "2xl", sm: "4xl" }}
+        fontWeight={"bold"}
+        padding={5}
+      >
+        {introText}{" "}
+      </Heading>
+      <Container maxW={"5xl"}>
+        <Grid templateColumns={columnLayout} gap={3}>
+          {images.map((image, index) => (
+            <GridItem key={index}>
+              <Box position="relative">
+                <Image src={image.src} alt={image.alt} width="100%" borderRadius={"14px"}/>
+
+                {/* <Text
               position="absolute"
               bottom={0}
               left={0}
@@ -33,10 +54,11 @@ GALLERY          </Heading>
             >
               {image.caption}
             </Text> */}
-          </Box>
-        </GridItem>
-      ))}
-    </Grid>
+              </Box>
+            </GridItem>
+          ))}
+        </Grid>
+      </Container>
     </Box>
   );
 };
