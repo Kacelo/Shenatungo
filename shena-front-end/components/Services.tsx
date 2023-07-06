@@ -35,11 +35,13 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
       borderWidth="1px"
       borderRadius="sm"
       overflow="hidden"
-      p={5}
+      p={2}
+      style={{ borderRadius: "14px !important" }}
+
     >
       <Stack align={"start"} spacing={2}>
         <Flex
-          style={{ width: "-webkit-fill-available !important", height: "-webkit-fill-available !important"  }}
+          style={{ width: "-webkit-fill-available !important", height: "-webkit-fill-available !important", borderRadius: "14px !important"  }}
           w={236}
           h={236}
           align={"center"}
@@ -48,6 +50,7 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
           // rounded={'full'}
           bg={useColorModeValue("white", "gray.700")}
           mb={2}
+
         >
           {imageSrc ? (
             <Image
@@ -55,7 +58,8 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
               alt=""
               height={236}
               width={236}
-              style={{ width: "-webkit-fill-available !important", height: "-webkit-fill-available !important" }}
+              style={{ width: "-webkit-fill-available !important", height: "-webkit-fill-available !important", borderRadius: "7px !important" }}
+              
             />
           ) : (
             icon
