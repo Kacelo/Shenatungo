@@ -57,6 +57,7 @@ const EmployeeCards: React.FC<ServicesProps> = ({ employees, openingText }) => {
               imageSrc={employee.imageSrc}
               instagramHandle={employee.instagramHandle}
               whatsapp={employee.whatsapp}
+
             />
           ))}
         </Flex>
@@ -113,9 +114,11 @@ const Card: React.FC<CardProps> = ({
       maxW={{ base: "full", md: "275px" }}
       w={"full"}
       borderWidth="1px"
-      borderRadius="sm"
+      // borderRadius="md"
       overflow="hidden"
-      p={5}
+      p={2}
+      style={{ borderRadius: "14px !important" }}
+
     >
       <Stack align={"start"} spacing={2}>
         <Flex
@@ -133,6 +136,7 @@ const Card: React.FC<CardProps> = ({
               style={{
                 width: "-webkit-fill-available !important",
                 objectFit: "cover",
+                borderRadius: "7px !important"
               }}
               alt=""
               height={236}

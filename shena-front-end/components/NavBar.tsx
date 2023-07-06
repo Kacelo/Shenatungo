@@ -263,7 +263,7 @@ import {
         {
           label: 'Hair Salon',
           subLabel: '',
-          href: '#',
+          href: '/salon',
         },
       ],
     },
@@ -273,7 +273,7 @@ import {
     },
     {
       label: 'Gallery',
-      href: '#',
+      href: 'gallery',
     },
     {
       label: 'Contact Us',

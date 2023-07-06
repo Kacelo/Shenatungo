@@ -9,7 +9,7 @@ import {
 interface HeroProps {
   imageUrl: string;
   introText: string;
-  headerImage: string;
+  headerImage?: string;
 }
 import { smythe } from "./fonts";
 import Image from "next/image";
@@ -53,7 +53,7 @@ const ServicesHero: React.FC<HeroProps> = ({ imageUrl, introText, headerImage })
               alt="Image"
               width={useBreakpointValue({ base: 100, md: 200 })}
               height={150}
-              style={{ opacity: "70%" }}
+              // style={{ opacity: "70%" }}
             />
           </div>
         </Stack>
