@@ -47,8 +47,8 @@ export const Banner = () => {
           <Box
             my="2rem"
             w={{ base: '300px', lg: '600px' }}
-            h={{ base: '300px', lg: '500px' }}
-            bg="center / cover no-repeat url(mockup.svg)"
+            h={{ base: '300px', lg: '590px' }}
+            bg="center / cover no-repeat url(images/products.png)" //we can resize to 500
           />
           {/* <BannerSlider /> */}
         </Box>
