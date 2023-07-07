@@ -8,7 +8,7 @@ import { MobileNav } from './MobileNav';
 
 export const ENavbar = () => {
   return (
-    <Box className="navbar-wrapper" h="120px">
+    <Box className="navbar-wrapper" h="110px">
     <Box {...navbarStyles}>
     <DesktopNav/>
     <MobileNav/>
