@@ -118,6 +118,7 @@ import { theme } from '../theme'
 import 'swiper/swiper.min.css';
 import { Banner } from "@/features/home/Banner";
 import { TopCategories } from "@/features/home/TopCategories";
+import { FeaturedProducts } from "@/features/home/FeaturedProducts";
 // import { ENavbar } from "@/components/eNavbar/ENavBar";
 // import AppContextProvider from '@src/context/AppContext';
 
@@ -135,6 +136,8 @@ export default function RootLayout({
               <ENavbar/>
               <Banner/>
               <TopCategories categories={[]} /> 
+              <FeaturedProducts/>
+              {/* <FeaturedP */}
               {/* // We are passing it as props inoder to fetch the data from topcategories*/}
               {children}
             {/* </AppContextProvider> */}
