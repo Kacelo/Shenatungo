@@ -24,10 +24,10 @@ export default function Barbershop() {
     },
     {
       name: "Santos",
-      phoneNumber: "+1 555-123-4567",
-      socialMedia: "",
+      phoneNumber: "+264852924965",
+      socialMedia: "https://www.instagram.com/santos_di_barber/",
       imageSrc: "/images/barberSection/santos2.jpg",
-      instagramHandle: "@lebby_z_fade_cutz",
+      instagramHandle: "@santos_di_barber",
       whatsapp: true,
     },
   ];
@@ -119,7 +119,7 @@ export default function Barbershop() {
   return (
     <>
       <ServicesHero
-        imageUrl="/images/services/barber-card.JPG"
+        imageUrl="/images/services/barber.jpeg"
         introText="BARBERSHOP"
         headerImage="/images/barberSection/clippers.png"
       />

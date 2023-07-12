@@ -36,12 +36,18 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
       borderRadius="sm"
       overflow="hidden"
       p={2}
-      style={{ borderRadius: "14px !important" }}
-
+      style={{
+        borderRadius: "14px !important",
+        boxShadow: " rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",
+      }}
     >
       <Stack align={"start"} spacing={2}>
         <Flex
-          style={{ width: "-webkit-fill-available !important", height: "-webkit-fill-available !important", borderRadius: "14px !important"  }}
+          style={{
+            width: "-webkit-fill-available !important",
+            height: "-webkit-fill-available !important",
+            borderRadius: "14px !important",
+          }}
           w={236}
           h={236}
           align={"center"}
@@ -50,7 +56,6 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
           // rounded={'full'}
           bg={useColorModeValue("white", "gray.700")}
           mb={2}
-
         >
           {imageSrc ? (
             <Image
@@ -58,8 +63,11 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
               alt=""
               height={236}
               width={236}
-              style={{ width: "-webkit-fill-available !important", height: "-webkit-fill-available !important", borderRadius: "7px !important" }}
-              
+              style={{
+                width: "-webkit-fill-available !important",
+                height: "-webkit-fill-available !important",
+                borderRadius: "7px !important",
+              }}
             />
           ) : (
             icon
@@ -71,9 +79,26 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button variant={"link"} color={"#D1B000"} size={"sm"}>
-          Learn more
-        </Button>
+        <Box
+          mt={2}
+          textAlign={"center"}
+          style={{ margin: "2em auto 0em", top: "0" }}
+        >
+          <Button
+            as={"a"}
+            // display={{ base: "none", md: "inline-flex" }}
+            fontSize={"sm"}
+            fontWeight={600}
+            color={"white"}
+            bg={"#D1B000"}
+            href={href}
+            _hover={{
+              bg: "yellow.400",
+            }}
+          >
+            Explore More
+          </Button>
+        </Box>
       </Stack>
     </Box>
   );
@@ -94,31 +119,35 @@ export default function Services() {
       <Container maxW={"5xl"} mt={12}>
         <Flex flexWrap="wrap" gridGap={12} justify="center">
           <Card
-            heading={"Barbers"}
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            description={
-              "Step into our barbershop and experience the artistry of our skilled professionals. From classic haircuts to modern styles, our barbers are dedicated to delivering impeccable grooming services that leave you looking sharp and feeling confident."
-            }
-            href={"#"}
-            imageSrc="/images/services/barber-card.JPG"
-          />
-          <Card
             heading={"Hairstylists"}
             icon={<Icon as={FcCollaboration} w={10} h={10} />}
             description={
-              "Unlock the full potential of your hair with our team of talented hairstylists. Whether you are seeking a bold transformation or a subtle update, our stylists will work their magic to create a look that suits your unique personality and enhances your natural beauty."
+              "Unlock the full potential of your hair with our team of talented hairstylists."
             }
-            href={"#"}
-            imageSrc=""
+            //  Whether you are seeking a bold transformation or a subtle update, our stylists will work their magic to create a look that suits your unique personality and enhances your natural beauty.
+            href={"/salon"}
+            imageSrc="/images/services/salon.jpeg"
           />
+          <Card
+            heading={"Barbers"}
+            icon={<Icon as={FcAssistant} w={10} h={10} />}
+            description={
+              "Step into our barbershop and experience the artistry of our skilled professionals."
+            }
+            // From classic haircuts to modern styles, our barbers are dedicated to delivering impeccable grooming services that leave you looking sharp and feeling confident.
+            href={"/barbershop"}
+            imageSrc="/images/services/barber.jpeg"
+          />
+
           <Card
             heading={"Nail Techs"}
             icon={<Icon as={FcDonate} w={10} h={10} />}
             description={
-              "Indulge in the art of nail care with our exceptional nail technicians. From intricate designs to flawless manicures and pedicures, our skilled experts will pamper your hands and feet, leaving you with nails that are as stunning as they are well-maintained."
+              "Indulge in the art of nail care with our exceptional nail technicians."
             }
+            //  From intricate designs to flawless manicures and pedicures, our skilled experts will pamper your hands and feet, leaving you with nails that are as stunning as they are well-maintained.
             href={"#"}
-            imageSrc="/images/services/nail-tech-card.JPG"
+            imageSrc="/images/services/nails.jpeg"
           />
           {/* <Card
               heading={'Beauty Products'}

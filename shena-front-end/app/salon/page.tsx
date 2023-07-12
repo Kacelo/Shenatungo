@@ -7,7 +7,7 @@ import HorizontalRule from "@/components/HorizontalRule";
 
 export default function Salon() {
     return (<>
-        <ServicesHero imageUrl ="/images/barberSection/photo_5805664601931629416_y.jpg" introText="" headerImage="/images/salon/logo2.png" />
+        <ServicesHero imageUrl ="/images/services/salon.jpeg" introText="SALON" headerImage="/images/salon/logo2.png" />
     {/* <EmployeeCards employees={employeesData} openingText={introductoryMessage} />
     <HorizontalRule />
     <PriceList hairstyles={hairstylesData} />
