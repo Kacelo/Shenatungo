@@ -117,7 +117,8 @@ const Card: React.FC<CardProps> = ({
       // borderRadius="md"
       overflow="hidden"
       p={2}
-      style={{ borderRadius: "14px !important" }}
+      style={{ borderRadius: "14px !important",         boxShadow: " rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",
+ }}
 
     >
       <Stack align={"start"} spacing={2}>
