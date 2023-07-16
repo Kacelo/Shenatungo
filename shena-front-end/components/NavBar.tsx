@@ -265,6 +265,16 @@ import {
           subLabel: '',
           href: '/salon',
         },
+        {
+          label: 'Nail Department',
+          subLabel: '',
+          href: '/salon',
+        },
+        {
+          label: 'Makeup Studio',
+          subLabel: '',
+          href: '/salon',
+        },
       ],
     },
     {

@@ -13,7 +13,7 @@ import {
         w={'full'}
         h={'100vh'}
         backgroundImage={
-          'url(/images/landing.png)'
+          'url(/images/services/salon.jpeg)'
         }
         backgroundSize={'cover'}
         backgroundPosition={'center center'}
