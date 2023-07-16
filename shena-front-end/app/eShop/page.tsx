@@ -115,12 +115,12 @@ import { theme } from '../theme'
 //     {/* <Gallery images={images} /> */}
 //     </>);
 //   }
-import 'swiper/swiper.min.css';
 import { Banner } from "@/features/home/Banner";
 import { TopCategories } from "@/features/home/TopCategories";
 import { FeaturedProducts } from "@/features/home/FeaturedProducts";
 // import { ENavbar } from "@/components/eNavbar/ENavBar";
 // import AppContextProvider from '@src/context/AppContext';
+import 'swiper/css';
 
 export default function RootLayout({
   children,
@@ -136,7 +136,9 @@ export default function RootLayout({
               <ENavbar/>
               <Banner/>
               <TopCategories categories={[]} /> 
-              <FeaturedProducts/>
+              <FeaturedProducts title="Our Best Deals"/>
+              <FeaturedProducts title="Trending Products"/>
+              <FeaturedProducts title="Best Selling Products"/>
               {/* <FeaturedP */}
               {/* // We are passing it as props inoder to fetch the data from topcategories*/}
               {children}

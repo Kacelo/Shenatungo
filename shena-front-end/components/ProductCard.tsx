@@ -1,6 +1,7 @@
 'use client'
 import { Card, CardBody, Stack, Heading, Divider, CardFooter, ButtonGroup, Button, Image, Text, Flex } from '@chakra-ui/react'
 import React from 'react'
+import { AddToCartButton } from './AddToCartButton'
 
 
 export const ProductCard = () => {
@@ -23,20 +24,11 @@ export const ProductCard = () => {
       <Text>
       Conditioner for smoothness. Mega Sleek System, with Shea Butter.
       </Text>
+      <Divider />
       {/* <Rating/> */}
+      <AddToCartButton/>
     </Stack>
   </CardBody>
-  <Divider />
-  <CardFooter>
-    <ButtonGroup spacing='2'>
-      <Button variant='solid' colorScheme='blue'>
-        Buy now
-      </Button>
-      <Button variant='ghost' colorScheme='blue'>
-        Add to cart
-      </Button>
-    </ButtonGroup>
-  </CardFooter>
 </Card>
   )
 }
