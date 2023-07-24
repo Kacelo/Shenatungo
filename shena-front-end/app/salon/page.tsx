@@ -67,15 +67,48 @@ export default function Salon() {
         //   price: "70",
         // },
       ];
+      const employeesData = [
+        {
+          name: "Lebby",
+          phoneNumber: "+264814504952",
+          socialMedia: "https://www.instagram.com/lebbyz_fade_cutz2023/",
+          imageSrc: "/images/barberSection/lebby2.jpeg",
+          instagramHandle: "@lebbyz_fade_cutz2023",
+          whatsapp: true,
+        },
+        {
+          name: "Penda",
+          phoneNumber: "+1 987-654-3210",
+          socialMedia: "",
+          imageSrc: "/images/barberSection/penda2.jpg",
+          instagramHandle: "@lebbyz_fade_cutz2023",
+          whatsapp: false,
+        },
+        {
+          name: "Santos",
+          phoneNumber: "+264852924965",
+          socialMedia: "https://www.instagram.com/santos_di_barber/",
+          imageSrc: "/images/barberSection/santos2.jpg",
+          instagramHandle: "@santos_di_barber",
+          whatsapp: true,
+        },
+      ];
+      const introductoryMessage = [
+        {
+          headingText: "Meet Our Talented Hairdressing Team",
+          meetOur: "",
+        },
+      ];
 
     return (<>
         <ServicesHero imageUrl ="/images/services/salon.jpeg" introText="SALON" headerImage="/images/salon/logo2.png" />
         <SalonIntro />
         <HorizontalRule />
 
-    {/* <EmployeeCards employees={employeesData} openingText={introductoryMessage} /> */}
-    {/* <HorizontalRule /> */}
+   
     <PriceList images={hairstylesData} />
+    <HorizontalRule />
+    <EmployeeCards employees={employeesData} openingText={introductoryMessage} />
     <HorizontalRule />
     {/* <Gallery images={images} introText="Glimpse into Our Barbering Artistry" */}
 {/* /> */}

@@ -55,7 +55,7 @@ export default function SalonIntro() {
           />
         </Flex>
         <Stack spacing={4}>
-          <Text
+          {/* <Text
             textTransform={"uppercase"}
             color={"yellow.900"}
             fontWeight={600}
@@ -66,7 +66,7 @@ export default function SalonIntro() {
             rounded={"md"}
           >
             Our Story
-          </Text>
+          </Text> */}
           <Heading>What We Offer</Heading>
           <Text color={"gray.500"} fontSize={"lg"}>
             Welcome to our luxurious salon, where beauty and elegance intertwine

@@ -13,7 +13,11 @@ interface HeroProps {
 }
 import { smythe } from "./fonts";
 import Image from "next/image";
-const ServicesHero: React.FC<HeroProps> = ({ imageUrl, introText, headerImage }) => {
+const ServicesHero: React.FC<HeroProps> = ({
+  imageUrl,
+  introText,
+  headerImage,
+}) => {
   return (
     <Flex
       w={"full"}
@@ -39,7 +43,7 @@ const ServicesHero: React.FC<HeroProps> = ({ imageUrl, introText, headerImage })
           })}
         >
           <Text
-            className={smythe.className}
+            // className={smythe.className}
             color={"#D1B000"}
             fontWeight={700}
             lineHeight={1.2}
@@ -53,7 +57,7 @@ const ServicesHero: React.FC<HeroProps> = ({ imageUrl, introText, headerImage })
               alt="Image"
               width={useBreakpointValue({ base: 100, md: 200 })}
               height={150}
-              // style={{ opacity: "70%" }}
+              style={{ width: "auto", height: "auto" }}
             />
           </div>
         </Stack>
