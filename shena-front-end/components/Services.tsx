@@ -116,18 +116,8 @@ export default function Services() {
         </Text>
       </Stack>
 
-      <Container maxW={"5xl"} mt={12}>
+      <Container maxW={"7xl"} mt={12}>
         <Flex flexWrap="wrap" gridGap={12} justify="center">
-          <Card
-            heading={"Hairstylists"}
-            icon={<Icon as={FcCollaboration} w={10} h={10} />}
-            description={
-              "Unlock the full potential of your hair with our team of talented hairstylists."
-            }
-            //  Whether you are seeking a bold transformation or a subtle update, our stylists will work their magic to create a look that suits your unique personality and enhances your natural beauty.
-            href={"/salon"}
-            imageSrc="/images/services/salon.jpeg"
-          />
           <Card
             heading={"Barbers"}
             icon={<Icon as={FcAssistant} w={10} h={10} />}
@@ -138,7 +128,25 @@ export default function Services() {
             href={"/barbershop"}
             imageSrc="/images/services/barber.jpeg"
           />
-
+          <Card
+            heading={"Hairstylists"}
+            icon={<Icon as={FcCollaboration} w={10} h={10} />}
+            description={
+              "Unlock the full potential of your hair with our team of talented hairstylists."
+            }
+            //  Whether you are seeking a bold transformation or a subtle update, our stylists will work their magic to create a look that suits your unique personality and enhances your natural beauty.
+            href={"/salon"}
+            imageSrc="/images/services/salon.jpeg"
+          />
+                  <Card
+            heading={"Make Up Studio"}
+            icon={<Icon as={FcManager} w={10} h={10} />}
+            description={
+              "Discover a world of beauty at your fingertips with our carefully curated selection of beauty products."
+            }
+            href={"#"}
+            imageSrc="/images/services/nails.jpeg"
+          />
           <Card
             heading={"Nail Techs"}
             icon={<Icon as={FcDonate} w={10} h={10} />}
@@ -149,14 +157,7 @@ export default function Services() {
             href={"#"}
             imageSrc="/images/services/nails.jpeg"
           />
-          {/* <Card
-              heading={'Beauty Products'}
-              icon={<Icon as={FcManager} w={10} h={10} />}
-              description={
-                'Discover a world of beauty at your fingertips with our carefully curated selection of beauty products. From luxurious skincare essentials to makeup must-haves and haircare gems, our collection features top-quality brands that will elevate your beauty routine and enhance your natural glow.'
-              }
-              href={'#'}
-            /> */}
+  
         </Flex>
       </Container>
     </Box>
