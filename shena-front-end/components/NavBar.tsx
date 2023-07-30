@@ -53,7 +53,7 @@ import {
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} >
   <Image src="/images/shena-logo.jpeg"  alt=''height={144}
-              width={100} style={{mixBlendMode: "darken"}}/>
+              width={100} style={{mixBlendMode: "darken", width:'100px', height:'100px'}}/>
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
@@ -262,6 +262,16 @@ import {
         },
         {
           label: 'Hair Salon',
+          subLabel: '',
+          href: '/salon',
+        },
+        {
+          label: 'Nail Department',
+          subLabel: '',
+          href: '/salon',
+        },
+        {
+          label: 'Makeup Studio',
           subLabel: '',
           href: '/salon',
         },
