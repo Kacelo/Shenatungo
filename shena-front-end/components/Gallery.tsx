@@ -27,16 +27,16 @@ const Gallery: React.FC<GalleryProps> = ({ images, introText }) => {
   return (
     <Box p={4} marginTop={"20"} textAlign={"center"}>
       <Heading
-        fontSize={{ base: "2xl", sm: "4xl" }}
+        fontSize={useBreakpointValue({ base: "2xl", md: "4xl" })}
         fontWeight={"bold"}
         padding={5}
       >
         {introText}{" "}
       </Heading>
       <Container maxW={"5xl"}>
-        <Grid templateColumns={columnLayout} gap={3}>
+        <Grid templateColumns={columnLayout} gap={3} > 
           {images.map((image, index) => (
-            <GridItem key={index}>
+            <GridItem key={index} margin={"auto"}>
               <Box position="relative">
                 <Image
                   src={image.src}

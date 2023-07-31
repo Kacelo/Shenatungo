@@ -104,16 +104,21 @@ export default function Barbershop() {
       src: `/images/barberSection/photo_5805664601931629${422 + index}_y.jpg`,
       alt: `Image ${index + 3}`,
       caption: ``,
+      price: ''
+
     })),
     ...Array.from({ length: 3 }, (_, index) => ({
       src: `/images/barberSection/photo_6039493638116981${331 + index}_y.jpg`,
       alt: `Image ${index + 3}`,
       caption: ``,
+      price: ''
+
     })),
     ...Array.from({ length: 3 }, (_, index) => ({
       src: `/images/barberSection/photo_6039493638116981${325 + index}_y.jpg`,
       alt: `Image ${index + 3}`,
       caption: ``,
+      price: ''
     })),
   ];
   return (

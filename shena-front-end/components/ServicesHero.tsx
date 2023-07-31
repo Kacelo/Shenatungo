@@ -9,7 +9,7 @@ import {
 interface HeroProps {
   imageUrl: string;
   introText: string;
-  headerImage?: string;
+  headerImage: string;
 }
 import { smythe } from "./fonts";
 import Image from "next/image";
@@ -33,7 +33,7 @@ const ServicesHero: React.FC<HeroProps> = ({
         bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
       >
         <Stack
-          maxW={"2xl"}
+          maxW={"4xl"}
           align={"flex-start"}
           spacing={6}
           direction={useBreakpointValue({
@@ -52,13 +52,13 @@ const ServicesHero: React.FC<HeroProps> = ({
             {introText}
           </Text>
           <div style={{ margin: "0 auto" }}>
-            <Image
+            {/* <Image
               src={headerImage}
               alt="Image"
               width={useBreakpointValue({ base: 100, md: 200 })}
               height={150}
               style={{ width: "auto", height: "auto" }}
-            />
+            /> */}
           </div>
         </Stack>
       </VStack>
