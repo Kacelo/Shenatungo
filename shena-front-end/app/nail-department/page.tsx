@@ -5,6 +5,7 @@ import Gallery from "@/components/Gallery";
 import HorizontalRule from "@/components/HorizontalRule";
 import EmployeeCards from "@/components/EmployeeCards";
 import MakeUpIntro from "@/components/make-up-intro";
+import { NailServices } from "@/components/nailServices";
 export default function MakeUpStudio() {
   const images = [
     ...Array.from({ length: 2 }, (_, index) => ({
@@ -34,20 +35,20 @@ export default function MakeUpStudio() {
   ];
   const employeesData = [
     {
-      name: "Lebby",
-      phoneNumber: "+264814504952",
-      socialMedia: "https://www.instagram.com/lebbyz_fade_cutz2023/",
-      imageSrc: "/images/barberSection/lebby2.jpeg",
-      instagramHandle: "@lebbyz_fade_cutz2023",
+      name: "Lucy",
+      phoneNumber: "+264816126470",
+      socialMedia: "https://www.instagram.com/lucy_nails___/",
+      imageSrc: "/images/nail-department/nail-techs/msg-894900809-575.jpg",
+      instagramHandle: "lucy_nails___",
       whatsapp: true,
     },
     {
-      name: "Penda",
-      phoneNumber: "+1 987-654-3210",
-      socialMedia: "",
-      imageSrc: "/images/barberSection/penda2.jpg",
-      instagramHandle: "@lebbyz_fade_cutz2023",
-      whatsapp: false,
+      name: "Maria Ngweshi",
+      phoneNumber: "+264813122481",
+      socialMedia: "https://www.instagram.com/ngweshibeautyparlour/",
+      imageSrc: "/images/nail-department/nail-techs/msg-894900809-566.jpg",
+      instagramHandle: "@ngweshibeautyparlour",
+      whatsapp: true,
     },
     {
       name: "Santos",
@@ -73,7 +74,7 @@ export default function MakeUpStudio() {
       />
       <MakeUpIntro />
       <HorizontalRule />
-
+      <NailServices />
       <Gallery
         images={images}
         introText="Our Captivating Makeup Studio Gallery"
