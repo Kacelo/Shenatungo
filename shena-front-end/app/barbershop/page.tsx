@@ -138,7 +138,7 @@ export default function Barbershop() {
       <HorizontalRule />
       <Gallery
         images={images}
-        introText="Glimpse into Our Barbering Artistry"
+        HeadingText="Glimpse into Our Barbering Artistry"
       />
     </>
   );

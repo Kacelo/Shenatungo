@@ -77,7 +77,10 @@ export default function MakeUpStudio() {
       <NailServices />
       <Gallery
         images={images}
-        introText="Our Captivating Makeup Studio Gallery"
+        HeadingText="Our Captivating Makeup Studio Gallery"
+        introText="With an unwavering passion for creativity and a keen eye for detail,
+        our team curates looks that are as diverse as the individuals they
+        grace."
       />
       <HorizontalRule />
 

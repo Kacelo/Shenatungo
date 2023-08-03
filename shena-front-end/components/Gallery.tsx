@@ -14,10 +14,11 @@ import { size } from "lodash";
 
 interface GalleryProps {
   images: { src: string; alt: string; caption: string; price: string }[];
-  introText: string;
+  HeadingText: string;
+  introText? : string;
 }
 
-const Gallery: React.FC<GalleryProps> = ({ images, introText }) => {
+const Gallery: React.FC<GalleryProps> = ({ images, HeadingText, introText }) => {
   const columnLayout = useBreakpointValue({
     base: "1fr",
     sm: "repeat(2, 1fr)",
@@ -27,14 +28,18 @@ const Gallery: React.FC<GalleryProps> = ({ images, introText }) => {
   return (
     <Box p={4} marginTop={"20"} textAlign={"center"}>
       <Heading
-        fontSize={useBreakpointValue({ base: "2xl", md: "4xl" })}
+        size={useBreakpointValue({ base: "xl", md: "2xl" })}
         fontWeight={"bold"}
         padding={5}
       >
-        {introText}{" "}
+        {HeadingText}{" "}
       </Heading>
+      <Text color={"gray.500"} fontSize={"lg"} mb={10}>
+        {" "}
+       {introText}
+      </Text>
       <Container maxW={"5xl"}>
-        <Grid templateColumns={columnLayout} gap={3} > 
+        <Grid templateColumns={columnLayout} gap={3}>
           {images.map((image, index) => (
             <GridItem key={index} margin={"auto"}>
               <Box position="relative">

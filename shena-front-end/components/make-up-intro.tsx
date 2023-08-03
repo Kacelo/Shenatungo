@@ -58,18 +58,26 @@ export default function MakeUpIntro() {
             >
               Our Story
             </Text> */}
-          <Heading>Welcome to a world of endless possibilities</Heading>
+          <Heading  size={{ base: "xl", sm: "2xl" }} >Welcome to a world of endless possibilities</Heading>
           <Text color={"gray.500"} fontSize={"lg"}>
             Step into our enchanting makeup studio, where artistry meets
-            imagination, and beauty becomes an exquisite masterpiece.With an
-            unwavering passion for creativity and a keen eye for detail, our
-            team curates looks that are as diverse as the individuals they
-            grace. Join us on a journey of self-discovery and let the power of
-            makeup elevate your inner radiance to new heights. Your canvas
-            awaits, and your true beauty awaits to be revealed. Welcome to a
-            world where dreams come to life, and beauty knows no boundaries.
-            Welcome to our Makeup Studio.
+            imagination, and beauty becomes an exquisite masterpiece.
           </Text>
+          {/* <Text color={"gray.500"} fontSize={"lg"}>
+            {" "}
+            Welcome to a world where dreams come to life, and beauty knows no
+            boundaries. Welcome to our Makeup Studio.
+          </Text> */}
+          <Text color={"gray.500"} fontSize={"lg"}>
+            Join us on a journey of self-discovery and let the power of makeup
+            elevate your inner radiance to new heights. Your canvas awaits, and
+            your true beauty awaits to be revealed.
+          </Text>
+          {/* <Text color={"gray.500"} fontSize={"lg"}>
+            With an unwavering passion for creativity and a keen eye for detail,
+            our team curates looks that are as diverse as the individuals they
+            grace.
+          </Text> */}
           <Stack
             spacing={4}
             divider={
@@ -97,6 +105,7 @@ export default function MakeUpIntro() {
                     // iconBg={useColorModeValue('purple.100', 'purple.900')}
                     text={'Nail Technicians'}
                   /> */}
+            T
           </Stack>
         </Stack>
         <Flex>

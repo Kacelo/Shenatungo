@@ -78,7 +78,7 @@ const PriceList: React.FC<Hairstyle> = ({ images }) => {
         />
       </Flex>
     </SimpleGrid> */}
-      <Gallery images={images} introText="Explore Our Priced Services" />
+      <Gallery images={images} HeadingText="Explore Our Priced Services" />
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Button
           backgroundColor={"#D1B000"}
