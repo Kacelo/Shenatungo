@@ -18,7 +18,7 @@ export const NailServices = () => {
   return (
     <Container maxW={"8xl"} mt={20}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading size="2xl">Services Offered</Heading>
+        <Heading size="2xl" mb={10}>Services Offered</Heading>
       </Stack>
       <Grid
         // h="450px"
@@ -37,23 +37,23 @@ export const NailServices = () => {
           <ServicesCards
             imageUrl="/images/nail-department/photo_5929321095545076599_y.jpg"
             imageAlt="dfdf"
-            productName="Manicures"
-            productDescription="Arcrylic and Gel"
+            productName="Manicures(Arcrylic and Gel)"
+            productDescription=""
           />
         </GridItem>
         <GridItem bg="white" borderRadius={14} margin={"auto"}>
           <ServicesCards
-            imageUrl="https://www.edgars.co.za/media/catalog/product/cache/1b5bd1c3f1a1f8dadfc68dc5bb5057ae/7/7/773602689477_translucent_3.3.jpg"
+            imageUrl="https://www.prettysbeauty.com/uploads/7/6/2/5/76250517/img-8774.jpg"
             imageAlt="dfdf"
-            productName="Manicures"
-            productDescription="Arcrylic and Gel"
+            productName="Pedicures(Arcrylic and Gel)"
+            productDescription=""
           />
         </GridItem>
         <GridItem bg="white" borderRadius={14} margin={"auto"}>
           <ServicesCards
-            imageUrl="https://www.edgars.co.za/media/catalog/product/cache/1b5bd1c3f1a1f8dadfc68dc5bb5057ae/7/7/773602689477_translucent_3.3.jpg"
+            imageUrl="https://m.media-amazon.com/images/I/81hoL6l7FqL._SL1500_.jpg"
             imageAlt="dfdf"
-            productName="Nail Training"
+            productName="Training"
             productDescription=""
           />
         </GridItem>

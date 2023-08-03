@@ -76,7 +76,7 @@ export const PopularProducts = () => {
         templateColumns={useBreakpointValue({
           base: "repeat(1, 1fr)",
           md: "repeat(2, 1fr)",
-          lg: "repeat(3, 1fr)",
+          lg: "repeat(4, 1fr)",
         })}
         gap={4}
       >
@@ -95,6 +95,14 @@ export const PopularProducts = () => {
             productName="Matrix Hair Care"
             productDescription=" Conditioner for smoothness. Mega Sleek System, with Shea
               Butter."
+          />
+        </GridItem>
+        <GridItem colSpan={1} bg="white" borderRadius={14}>
+          <PopularProductCards
+            imageUrl="https://www.edgars.co.za/media/catalog/product/cache/1b5bd1c3f1a1f8dadfc68dc5bb5057ae/8/4/840026665667_1.jpg"
+            imageAlt="product1"
+            productName=" Fenty Beauty"
+            productDescription=" Fenty Icon Refill Lipstick Case"
           />
         </GridItem>
         <GridItem colSpan={1} bg="white" borderRadius={14}>

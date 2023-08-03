@@ -11,7 +11,7 @@ export default function MakeUpStudio() {
     ...Array.from({ length: 2 }, (_, index) => ({
       src: `/images/nail-department/photo_5924641007121578${865 + index}_y.jpg`,
       alt: `Image ${index + 3}`,
-      caption: `BY Lucy`,
+      caption: ``,
       price: "",
     })),
     ...Array.from({ length: 3 }, (_, index) => ({
@@ -50,18 +50,18 @@ export default function MakeUpStudio() {
       instagramHandle: "@ngweshibeautyparlour",
       whatsapp: true,
     },
-    {
-      name: "Santos",
-      phoneNumber: "+264852924965",
-      socialMedia: "https://www.instagram.com/santos_di_barber/",
-      imageSrc: "/images/barberSection/santos2.jpg",
-      instagramHandle: "@santos_di_barber",
-      whatsapp: true,
-    },
+    // {
+    //   name: "Santos",
+    //   phoneNumber: "+264852924965",
+    //   socialMedia: "https://www.instagram.com/santos_di_barber/",
+    //   imageSrc: "/images/barberSection/santos2.jpg",
+    //   instagramHandle: "@santos_di_barber",
+    //   whatsapp: true,
+    // },
   ];
   const introductoryMessage = [
     {
-      headingText: "Meet Our Talented Make Up Artists",
+      headingText: "Meet Our Talented Nail Technicians",
       meetOur: "",
     },
   ];
@@ -75,18 +75,20 @@ export default function MakeUpStudio() {
       <MakeUpIntro />
       <HorizontalRule />
       <NailServices />
+      <HorizontalRule />
+
       <Gallery
         images={images}
-        HeadingText="Our Captivating Makeup Studio Gallery"
+        HeadingText="Our Captivating Nail Tech Gallery"
         introText="With an unwavering passion for creativity and a keen eye for detail,
         our team curates looks that are as diverse as the individuals they
         grace."
       />
       <HorizontalRule />
 
-      <PopularProducts />
+      {/* <PopularProducts />
 
-      <HorizontalRule />
+      <HorizontalRule /> */}
       <EmployeeCards
         employees={employeesData}
         openingText={introductoryMessage}

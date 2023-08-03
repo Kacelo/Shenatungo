@@ -80,7 +80,7 @@ export const ServicesCards: React.FC<PopularProductsCardsProps> = ({
       <Image src={imageUrl} alt={imageAlt} borderRadius="7px" height={300} width={300}/>
           </Box>
         <Stack mt="6" spacing="3">
-          <Flex justify="space-between" align="center">
+          <Flex justify="space-between">
             <Heading size="md">{productName}</Heading>
           </Flex>
           <Text>{productDescription}</Text>
