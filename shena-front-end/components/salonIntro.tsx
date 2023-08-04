@@ -70,9 +70,11 @@ export default function SalonIntro() {
           <Heading>What We Offer</Heading>
           <Text color={"gray.500"} fontSize={"lg"}>
             Welcome to our luxurious salon, where beauty and elegance intertwine
-            to create a truly unforgettable experience. Step into a world of
-            pampering and rejuvenation as our skilled team of experts indulge
-            you with the finest beauty and hair services.
+            to create a truly unforgettable experience.
+          </Text>
+          <Text color={"gray.500"} fontSize={"lg"}>
+            Step into a world of pampering and rejuvenation as our skilled team
+            of experts indulge you with the finest beauty and hair services.
           </Text>
           <Stack
             spacing={4}
@@ -101,6 +103,7 @@ export default function SalonIntro() {
                   // iconBg={useColorModeValue('purple.100', 'purple.900')}
                   text={'Nail Technicians'}
                 /> */}
+            T
           </Stack>
         </Stack>
       </SimpleGrid>

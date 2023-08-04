@@ -101,7 +101,7 @@ export default function Salon() {
       ];
 
     return (<>
-        <ServicesHero imageUrl ="/images/salon/landingImage.jpg" introText="SALON" headerImage="/images/salon/logo2.png" />
+        <ServicesHero imageUrl ="/images/salon/landingImage.jpg" introText="Hair Salon" headerImage="/images/salon/logo2.png" />
         <SalonIntro />
         <HorizontalRule />
 

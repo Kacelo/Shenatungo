@@ -32,7 +32,7 @@ export default function Navbar() {
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
-        // py={{ base: 2 }}
+        // pt={{ base: 3 }}
         px={{ base: 4 }}
         borderBottom={1}
         borderStyle={"solid"}
@@ -58,12 +58,12 @@ export default function Navbar() {
             <Image
               src="/images/shena-logo.jpeg"
               alt="Logo Image"
-              height={144}
+              height={100}
               width={100}
               style={{
                 mixBlendMode: "darken",
-                width: "100px",
-                height: "100px",
+                width: "auto",
+                height: "auto",
               }}
             />{" "}
           </Link>
@@ -100,6 +100,7 @@ export default function Navbar() {
             _hover={{
               bg: "yellow.400",
             }}
+            borderRadius={"full"}
           >
             Book Appointment
           </Button>
@@ -119,15 +120,15 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack direction={"row"} spacing={4} mt={10}>
+    <Stack direction={"row"} spacing={4} mt={"auto"} mb={"auto !important"}>
       {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
+        <Box key={navItem.label} >
+          <Popover trigger={"hover"} placement={"bottom-start"} >
             <PopoverTrigger>
               <Link
                 p={2}
                 href={navItem.href ?? "#"}
-                fontSize={"sm"}
+                fontSize={"md"}
                 fontWeight={900}
                 color={linkColor}
                 _hover={{
@@ -313,6 +314,6 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "Contact Us",
-    href: "#",
+    href: "/contact-us",
   },
 ];

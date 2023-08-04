@@ -76,29 +76,8 @@ export default function Barbershop() {
       caption: "HAIR COLORING/HIGHLIGHTS",
       price: "80",
     },
-    // {
-    //   src: "/images/barberSection/bold.jpg",
-    //   alt: "Image 2",
-    //   caption: "Bold",
-    //   price: "70",
-    // },
   ];
   const images = [
-    // {
-    //   src: '/images/barberSection/IMG_1788.JPG',
-    //   alt: 'Image 2',
-    //   caption: 'Fade',
-    // },
-    // {
-    //   src: '/images/barberSection/IMG_1798.JPG',
-    //   alt: 'Image 2',
-    //   caption: 'Beard Trim',
-    // },
-    // {
-    //   src: '/images/barberSection/IMG_1754.JPG',
-    //   alt: 'Image 2',
-    //   caption: 'Trimming',
-    // },
     // Add more image objects as needed
     ...Array.from({ length: 6 }, (_, index) => ({
       src: `/images/barberSection/photo_5805664601931629${422 + index}_y.jpg`,
@@ -125,7 +104,7 @@ export default function Barbershop() {
     <>
       <ServicesHero
         imageUrl="/images/services/barber.jpeg"
-        introText="BARBERSHOP"
+        introText="Barbershop"
         headerImage="/images/barberSection/clippers.png"
       />
       <PriceList images={hairstylesData} />
@@ -134,7 +113,6 @@ export default function Barbershop() {
         employees={employeesData}
         openingText={introductoryMessage}
       />
-
       <HorizontalRule />
       <Gallery
         images={images}

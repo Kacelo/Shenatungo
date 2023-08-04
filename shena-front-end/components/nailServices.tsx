@@ -18,7 +18,9 @@ export const NailServices = () => {
   return (
     <Container maxW={"8xl"} mt={20}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading size="2xl" mb={10}>Services Offered</Heading>
+        <Heading size="2xl" mb={10}>
+          Services Offered
+        </Heading>
       </Stack>
       <Grid
         // h="450px"
@@ -28,7 +30,8 @@ export const NailServices = () => {
         })}
         templateColumns={useBreakpointValue({
           base: "repeat(1, 1fr)",
-          md: "repeat(3, 1fr)",
+          md: "repeat(2, 1fr)",
+          lg: "repeat(3, 1fr)",
         })}
         // gap={3}
         textAlign={"center"}
@@ -58,6 +61,17 @@ export const NailServices = () => {
           />
         </GridItem>
       </Grid>{" "}
+      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"} marginTop={"2em"}>
+        <Button
+          backgroundColor={"#D1B000"}
+          color={"white"}
+          _hover={{ bg: "whiteAlpha.100", color: "#D1B000" }}
+          style={{ margin: "0 auto" }}
+          borderRadius={"full"}
+        >
+          Download Price List
+        </Button>
+      </Stack>
     </Container>
   );
 };

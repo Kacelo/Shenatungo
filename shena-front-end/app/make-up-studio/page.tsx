@@ -56,12 +56,11 @@ export default function MakeUpStudio() {
     <>
       <ServicesHero
         imageUrl="/images/make-up-studio/photo_5924641007121578706_y.jpg"
-        introText="MAKE UP STUDIO"
+        introText="Make Up Studio"
         headerImage=""
       />
       <MakeUpIntro />
       <HorizontalRule />
-
       <Gallery
         images={images}
         HeadingText="Our Captivating Makeup Studio Gallery"
@@ -70,9 +69,7 @@ export default function MakeUpStudio() {
         grace."
       />
       <HorizontalRule />
-
       <PopularProducts />
-
       <HorizontalRule />
       <EmployeeCards
         employees={employeesData}

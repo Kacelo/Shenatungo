@@ -69,11 +69,11 @@ export default function MakeUpStudio() {
     <>
       <ServicesHero
         imageUrl="/images/nail-department/photo_5926892806935264605_x.jpg"
-        introText="NAIL DEPARTMENT"
+        introText="Nail Department"
         headerImage=""
       />
-      <MakeUpIntro />
-      <HorizontalRule />
+      {/* <MakeUpIntro />
+      <HorizontalRule /> */}
       <NailServices />
       <HorizontalRule />
 
