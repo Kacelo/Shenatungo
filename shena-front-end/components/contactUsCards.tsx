@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { FcAssistant, FcCollaboration, FcDonate } from "react-icons/fc";
 // import { FaEnvelope } from "react-icons/fa";
-import { FaBeer, FaEnvelope } from "react-icons/fa";
+import { FaBeer, FaEnvelope, FaMapMarked } from "react-icons/fa";
 
 interface ContactDetails {
   heading: string;
@@ -23,6 +23,8 @@ interface ContactDetails {
   imageSrc: string;
   whatsapp: boolean;
   sendMail: boolean;
+  showLocation?: boolean;
+  phone?: boolean;
 }
 // interface Welcome {
 //   headingText: string;
@@ -52,6 +54,8 @@ const contactUsCards: React.FC<ContactUsProps> = ({ contactInfo }) => {
               imageSrc={info.imageSrc}
               whatsapp={info.whatsapp}
               sendMail={info.sendMail}
+              showLocation={info.showLocation}
+              phone={info.phone}
             />
           ))}
         </Flex>
@@ -68,6 +72,8 @@ interface CardProps {
   imageSrc: string;
   whatsapp?: boolean;
   sendMail: boolean;
+  showLocation?: boolean;
+  phone?: boolean;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -78,12 +84,20 @@ const Card: React.FC<CardProps> = ({
   imageSrc,
   whatsapp,
   sendMail,
+  showLocation,
+  phone,
 }) => {
   const openWhatsApp = () => {
     const message = "Hello, I would like to book an appointment.";
     const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
       message
     )}`;
+    window.open(url, "_blank");
+  };
+
+
+  const openGoogleMaps = () => {
+    const url = `https://goo.gl/maps/ANjkEQtQzpX4naND7`;
     window.open(url, "_blank");
   };
   const openEmailClient = () => {
@@ -152,6 +166,9 @@ const Card: React.FC<CardProps> = ({
               width={45}
             />
           ) : (
+            ""
+          )}
+          {sendMail ? (
             <FaEnvelope
               style={{
                 width: "100px",
@@ -160,6 +177,20 @@ const Card: React.FC<CardProps> = ({
                 color: "black",
               }}
             />
+          ) : (
+            ""
+          )}{" "}
+          {showLocation ? (
+            <FaMapMarked
+              style={{
+                width: "100px",
+                height: "100px !important",
+                margin: "auto",
+                color: "black",
+              }}
+            />
+          ) : (
+            ""
           )}
           {/* Place your employee image or icon here */}
         </Flex>
@@ -168,27 +199,6 @@ const Card: React.FC<CardProps> = ({
           <Text mt={1} fontSize={"sm"}>
             {subHeading}
           </Text>
-          {/* <div
-            onClick={openInsta}
-            style={{ cursor: "pointer", display: "flex" }}
-          >
-            {socialMedia ? (
-              <>
-                {" "}
-                <Image
-                  src={"/images/instagram.png"}
-                  alt=""
-                  height={23}
-                  width={23}
-                />
-                <Text fontSize={"sm"} mb={1} ml={1}>
-                  {instagramHandle}
-                </Text>
-              </>
-            ) : (
-              <div style={{ margin: "25px 0 auto" }}></div>
-            )}
-          </div> */}
         </Box>
         {whatsapp && (
           <Button
@@ -215,7 +225,7 @@ const Card: React.FC<CardProps> = ({
             Email Now
           </Button>
         )}
-        {!sendMail && !whatsapp && (
+        {phone && (
           <Button
             backgroundColor={"#D1B000"}
             color={"white"}
@@ -224,6 +234,17 @@ const Card: React.FC<CardProps> = ({
             onClick={openPhoneDialer}
           >
             Call Now{" "}
+          </Button>
+        )}
+        {showLocation &&(
+          <Button
+            backgroundColor={"#D1B000"}
+            color={"white"}
+            size={"sm"}
+            _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
+            onClick={openGoogleMaps}
+          >
+            Open Map{" "}
           </Button>
         )}
       </Stack>

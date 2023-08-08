@@ -136,7 +136,7 @@ export default function Services() {
             }
             //  Whether you are seeking a bold transformation or a subtle update, our stylists will work their magic to create a look that suits your unique personality and enhances your natural beauty.
             href={"/salon"}
-            imageSrc="/images/services/salon.jpeg"
+            imageSrc="/images/salon/landing2.jpg"
           />
                   <Card
             heading={"Make Up Studio"}
@@ -144,8 +144,8 @@ export default function Services() {
             description={
               "Discover a world of beauty at your fingertips with our carefully curated selection of beauty products."
             }
-            href={"#"}
-            imageSrc="/images/services/nails.jpeg"
+            href={"/make-up-studio"}
+            imageSrc="/images/make-up-studio/cardImage.jpg"
           />
           <Card
             heading={"Nail Techs"}

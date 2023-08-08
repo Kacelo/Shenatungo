@@ -34,12 +34,13 @@ interface ServicesProps {
 const EmployeeCards: React.FC<ServicesProps> = ({ employees, openingText }) => {
   return (
     <Box p={4} marginTop={"20"}>
-      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
+      <Stack spacing={4} as={Container} maxW={"4xl"} textAlign={"center"}>
+        <Heading size={{ base: "xl", sm: "2xl" }} fontWeight={"bold"}>
           {openingText.map((text) => {
             return text.headingText;
           })}
         </Heading>
+        
         <Text color={"gray.600"} fontSize={{ base: "sm", sm: "lg" }}>
           {openingText.map((text) => {
             return text.meetOur;
@@ -149,8 +150,8 @@ const Card: React.FC<CardProps> = ({
           {/* Place your employee image or icon here */}
         </Flex>
         <Box mt={2}>
-          <Heading size="md">{heading}</Heading>
-          <Text mt={1} fontSize={"sm"}>
+          <Heading size="md" color={"gray.700"} >{heading}</Heading>
+          <Text mt={1} fontSize={"sm"} fontWeight={"normal"}  color={"gray.700"} >
             Phone: {phoneNumber}
           </Text>
           <div
@@ -166,7 +167,7 @@ const Card: React.FC<CardProps> = ({
                   height={23}
                   width={23}
                 />
-                <Text fontSize={"sm"} mb={1} ml={1}>
+                <Text fontSize={"sm"} mb={1} ml={1} fontWeight={"normal"}  color={"gray.700"} >
                   {instagramHandle}
                 </Text>
               </>
@@ -180,6 +181,7 @@ const Card: React.FC<CardProps> = ({
             backgroundColor={"#D1B000"}
             color={"white"}
             size={"sm"}
+            borderRadius={"full"}
             _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             onClick={openWhatsApp}
             rightIcon={
@@ -192,6 +194,7 @@ const Card: React.FC<CardProps> = ({
           <Button
             backgroundColor={"#D1B000"}
             color={"white"}
+            borderRadius={"full"}
             size={"sm"}
             _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             onClick={openPhoneMessenger}
