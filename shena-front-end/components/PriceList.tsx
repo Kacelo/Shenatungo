@@ -39,6 +39,8 @@ const PriceList: React.FC<Hairstyle> = ({ images }) => {
           color={"white"}
           _hover={{ bg: "whiteAlpha.100", color: "#D1B000" }}
           style={{ margin: "0 auto" }}
+          borderRadius={"full"}
+
         >
           Download Price List
         </Button>

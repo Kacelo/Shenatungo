@@ -49,7 +49,7 @@ export default function SalonIntro() {
           <Image
             rounded={"md"}
             alt={"feature image"}
-            src={"/images/barberSection/photo_5805664601931629412_y.jpg"}
+            src={"/images/barberSection/photo_5805664601931629385_y.jpg"}
             objectFit={"cover"}
             style={{ borderRadius: "14px !important" }}
           />
@@ -67,9 +67,9 @@ export default function SalonIntro() {
           >
             Our Story
           </Text> */}
-          <Heading>What We Offer</Heading>
+          <Heading>Welcome to our luxurious salon</Heading>
           <Text color={"gray.500"} fontSize={"lg"}>
-            Welcome to our luxurious salon, where beauty and elegance intertwine
+            Where beauty and elegance intertwine
             to create a truly unforgettable experience.
           </Text>
           <Text color={"gray.500"} fontSize={"lg"}>

@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Container,
+  Flex,
   Grid,
   GridItem,
   Heading,
@@ -61,7 +62,13 @@ export const NailServices = () => {
           />
         </GridItem>
       </Grid>{" "}
-      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"} marginTop={"2em"}>
+      <Stack
+        spacing={4}
+        as={Container}
+        maxW={"3xl"}
+        textAlign={"center"}
+        marginTop={"2em"}
+      >
         <Button
           backgroundColor={"#D1B000"}
           color={"white"}
@@ -71,6 +78,31 @@ export const NailServices = () => {
         >
           Download Price List
         </Button>
+      </Stack>
+    </Container>
+  );
+};
+export const NailGuide = () => {
+  return (
+    <Container maxW={"8xl"} mt={20}>
+      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
+        <Heading size="2xl" mb={5}>
+          Popular Nail Shape Guide
+        </Heading>
+        <Text color={"gray.500"} fontSize={"lg"}>
+         Let us help you pick the shape that best suits your fingers.
+        </Text>
+      </Stack>
+      <Stack>
+      <Flex>
+          <Image
+            rounded={"md"}
+            alt={"feature image"}
+            src={useBreakpointValue({base:"/images/nail-department/4.png", md:"/images/nail-department/1.png"})}
+            objectFit={"cover"}
+            style={{ borderRadius: "14px !important" }}
+          />
+        </Flex>
       </Stack>
     </Container>
   );

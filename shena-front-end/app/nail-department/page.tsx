@@ -5,7 +5,7 @@ import Gallery from "@/components/Gallery";
 import HorizontalRule from "@/components/HorizontalRule";
 import EmployeeCards from "@/components/EmployeeCards";
 import MakeUpIntro from "@/components/make-up-intro";
-import { NailServices } from "@/components/nailServices";
+import { NailGuide, NailServices } from "@/components/nailServices";
 export default function MakeUpStudio() {
   const images = [
     ...Array.from({ length: 2 }, (_, index) => ({
@@ -76,7 +76,8 @@ export default function MakeUpStudio() {
       <HorizontalRule /> */}
       <NailServices />
       <HorizontalRule />
-
+      <NailGuide />
+      <HorizontalRule />
       <Gallery
         images={images}
         HeadingText="Our Captivating Nail Tech Gallery"
