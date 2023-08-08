@@ -180,7 +180,8 @@ const Card: React.FC<CardProps> = ({
           <Button
             backgroundColor={"#D1B000"}
             color={"white"}
-            size={"sm"}
+            size={"md"}
+            style={{ minWidth: "150px" }}
             borderRadius={"full"}
             _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             onClick={openWhatsApp}
@@ -194,8 +195,9 @@ const Card: React.FC<CardProps> = ({
           <Button
             backgroundColor={"#D1B000"}
             color={"white"}
+            size={"md"}
+            style={{ minWidth: "150px" }}
             borderRadius={"full"}
-            size={"sm"}
             _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             onClick={openPhoneMessenger}
           >

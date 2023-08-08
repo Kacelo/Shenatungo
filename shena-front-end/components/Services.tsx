@@ -87,8 +87,9 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
           <Button
             as={"a"}
             // display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
+             size={"md"}
+            style={{ minWidth: "150px" }}
+            borderRadius={"full"}           fontWeight={600}
             color={"white"}
             bg={"#D1B000"}
             href={href}
@@ -154,7 +155,7 @@ export default function Services() {
               "Indulge in the art of nail care with our exceptional nail technicians."
             }
             //  From intricate designs to flawless manicures and pedicures, our skilled experts will pamper your hands and feet, leaving you with nails that are as stunning as they are well-maintained.
-            href={"#"}
+            href={"nail-department"}
             imageSrc="/images/services/nails.jpeg"
           />
   
