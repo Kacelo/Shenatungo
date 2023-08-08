@@ -13,19 +13,27 @@ import {
 import {
   IoAnalyticsSharp,
   IoLogoBitcoin,
-  IoSearchSharp,
+ IoLocationOutline,
+  IoMap,
+  IoTimeOutline
 } from "react-icons/io5";
 import { ReactElement } from "react";
+import { FaBeer, FaEnvelope, FaMapMarked } from "react-icons/fa";
 
 interface FeatureProps {
   text: string;
   iconBg: string;
   icon?: ReactElement;
+  details?: string;
+  FurtherDetails?: string;
+
 }
 
-const Feature = ({ text, icon, iconBg }: FeatureProps) => {
+const Feature = ({ text, icon, iconBg, details, FurtherDetails }: FeatureProps) => {
   return (
-    <Stack direction={"row"} align={"center"}>
+    <Container>
+      
+   <Stack direction={"row"} align={"center"}>
       <Flex
         w={8}
         h={8}
@@ -36,14 +44,27 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
       >
         {icon}
       </Flex>
-      <Text fontWeight={600}>{text}</Text>
+     
     </Stack>
+    <Stack>
+    <Text fontWeight={600}>{text}</Text>
+
+    <Flex>
+      <Text color={"gray.500"} fontWeight={100}>{details}</Text>
+
+      </Flex>
+      <Text color={"gray.500"} fontWeight={100}>{FurtherDetails}</Text>
+    </Stack>
+
+    </Container>
+ 
   );
 };
 
 export default function Intro() {
   return (
     <Container maxW={"5xl"} py={12} marginTop={"20"}>
+      
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
           <Text
@@ -75,23 +96,28 @@ export default function Intro() {
               />
             }
           >
-            {/* <Feature
-                // icon={
-                // //   <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
-                // }
-                // iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                text={'Barbers'}
+            <Feature
+                icon={
+                  <Icon as={IoLocationOutline} color={'yellow.500'} w={10} h={10} />
+                }
+                iconBg={useColorModeValue('white.100', 'white.900')}
+                text={'Location'}
+                details="Shop 6, Opposite College of the Arts"
+                
               />
               <Feature
-                // icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
-                // iconBg={useColorModeValue('green.100', 'green.900')}
-                text={'Hairstylists'}
+                icon={<Icon as={IoTimeOutline} color={'yellow.500'} w={10} h={10} />}
+                iconBg={useColorModeValue('white.100', 'white.900')}
+                text={'Operating Times '}
+                details={"Monday - Friday: 09:00 - 19:00"}
+                FurtherDetails={"Sunday & Saturday: 09:00 - 15:00"}
+
               />
-              <Feature
-                // icon={
-                //   <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
-                // }
-                // iconBg={useColorModeValue('purple.100', 'purple.900')}
+              {/* <Feature
+                icon={
+                  <Icon as={IoLocationOutline} color={'yellow.500'} w={10} h={10} />
+                }
+                iconBg={useColorModeValue('white.100', 'white.900')}
                 text={'Nail Technicians'}
               /> */}
           </Stack>

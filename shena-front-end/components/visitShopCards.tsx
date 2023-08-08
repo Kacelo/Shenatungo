@@ -6,13 +6,14 @@ import {
   GridItem,
   Heading,
   Image,
+  Stack,
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
 
 export const VisitShop = () => {
   return (
-    <Container maxW={"7xl"} mt={20}>
+    <Container maxW={"6xl"} mt={20}>
       <Heading fontWeight={600} fontSize={"5xl"}>
         Maintain Your Look
       </Heading>{" "}
@@ -38,32 +39,44 @@ export const VisitShop = () => {
               borderRadius={"14px"}
             />
 
-            <VStack
-              align={"start"}
-              position="absolute"
-              bottom={0}
-              left={0}
-              right={0}
-              px={2}
-              py={1}
-              fontWeight="bold"
-              bg="blackAlpha.300"
-              color="white"
-              borderRadius={"0 0 14px 14px"}
-            >
-              {" "}
-              <Heading fontWeight={600} fontSize={"xl"}>
-                View our full collection of products
-              </Heading>{" "}
-              <Button
-                backgroundColor={"#D1B000"}
-                color={"white"}
-                size={"sm"}
-                _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
-              >
-                Visit Shop
-              </Button>{" "}
-            </VStack>
+<VStack
+                  align={"start"}
+                  position="absolute"
+                  bottom={0}
+                  left={0}
+                  right={0}
+                  px={3}
+                  py={2}
+                  fontWeight="bold"
+                  bg="blackAlpha.300"
+                  color="white"
+                  borderRadius={"14px 14px"}
+                  width={"100%"}
+                  height={"100%"}
+                  alignContent={"center"}
+                >
+                  {" "}
+                  <Stack
+                    paddingTop={"auto"}
+                    marginTop={"auto"}
+                    textAlign={"initial"}
+                  >
+                    <Heading fontWeight={600} fontSize={"xl"}>
+                      Hair Conditioner
+                    </Heading>{" "}
+                  </Stack>
+                  <Button
+                    backgroundColor={"#D1B000"}
+                    color={"white"}
+                    size={"md"}
+                    style={{ minWidth: "150px" }}
+                    _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
+                    borderRadius={"full"}
+
+                  >
+                    View More
+                  </Button>{" "}
+                </VStack>
           </Box>{" "}
         </GridItem>
         <GridItem colSpan={2} bg="white">
@@ -81,29 +94,40 @@ export const VisitShop = () => {
                   width="100%"
                   borderRadius={"14px"}
                 />
-
-                <VStack
+          <VStack
                   align={"start"}
                   position="absolute"
                   bottom={0}
                   left={0}
                   right={0}
-                  px={2}
-                  py={1}
+                  px={3}
+                  py={2}
                   fontWeight="bold"
                   bg="blackAlpha.300"
                   color="white"
-                  borderRadius={"0 0 14px 14px"}
+                  borderRadius={"14px 14px"}
+                  width={"100%"}
+                  height={"100%"}
+                  alignContent={"center"}
                 >
                   {" "}
-                  <Heading fontWeight={600} fontSize={"xl"}>
-                    Braids
-                  </Heading>{" "}
+                  <Stack
+                    paddingTop={"auto"}
+                    marginTop={"auto"}
+                    textAlign={"initial"}
+                  >
+                    <Heading fontWeight={600} fontSize={"xl"}>
+                      Hair Conditioner
+                    </Heading>{" "}
+                  </Stack>
                   <Button
                     backgroundColor={"#D1B000"}
                     color={"white"}
-                    size={"sm"}
+                    size={"md"}
+                    style={{ minWidth: "150px" }}
                     _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
+                    borderRadius={"full"}
+
                   >
                     View More
                   </Button>{" "}
@@ -118,34 +142,44 @@ export const VisitShop = () => {
                   width="100%"
                   borderRadius={"14px"}
                 />
-
-                <VStack
+          <VStack
                   align={"start"}
                   position="absolute"
                   bottom={0}
                   left={0}
                   right={0}
-                  px={2}
-                  py={1}
+                  px={3}
+                  py={2}
                   fontWeight="bold"
                   bg="blackAlpha.300"
                   color="white"
-                  borderRadius={"0 0 14px 14px"}
+                  borderRadius={"14px 14px"}
+                  width={"100%"}
+                  height={"100%"}
+                  alignContent={"center"}
                 >
                   {" "}
-                  <Heading fontWeight={600} fontSize={"xl"}>
-                    Beard Care
-                  </Heading>{" "}
+                  <Stack
+                    paddingTop={"auto"}
+                    marginTop={"auto"}
+                    textAlign={"initial"}
+                  >
+                    <Heading fontWeight={600} fontSize={"xl"}>
+                      Hair Conditioner
+                    </Heading>{" "}
+                  </Stack>
                   <Button
                     backgroundColor={"#D1B000"}
                     color={"white"}
-                    size={"sm"}
+                    size={"md"}
+                    style={{ minWidth: "150px" }}
                     _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
+                    borderRadius={"full"}
+
                   >
                     View More
                   </Button>{" "}
-                </VStack>
-              </Box>{" "}
+                </VStack>              </Box>{" "}
             </GridItem>
             <GridItem colSpan={2} bg="white" borderRadius={14}>
               <Box position="relative">
@@ -155,29 +189,40 @@ export const VisitShop = () => {
                   width="100%"
                   borderRadius={"14px"}
                 />
-
                 <VStack
                   align={"start"}
                   position="absolute"
                   bottom={0}
                   left={0}
                   right={0}
-                  px={2}
-                  py={1}
+                  px={3}
+                  py={2}
                   fontWeight="bold"
                   bg="blackAlpha.300"
                   color="white"
-                  borderRadius={"0 0 14px 14px"}
+                  borderRadius={"14px 14px"}
+                  width={"100%"}
+                  height={"100%"}
+                  alignContent={"center"}
                 >
                   {" "}
-                  <Heading fontWeight={600} fontSize={"xl"}>
-                    Hair Conditioner
-                  </Heading>{" "}
+                  <Stack
+                    paddingTop={"auto"}
+                    marginTop={"auto"}
+                    textAlign={"initial"}
+                  >
+                    <Heading fontWeight={600} fontSize={"xl"}>
+                      Hair Conditioner
+                    </Heading>{" "}
+                  </Stack>
                   <Button
                     backgroundColor={"#D1B000"}
                     color={"white"}
-                    size={"sm"}
+                    size={"md"}
+                    style={{ minWidth: "150px" }}
                     _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
+                    borderRadius={"full"}
+
                   >
                     View More
                   </Button>{" "}
@@ -199,22 +244,34 @@ export const VisitShop = () => {
                   bottom={0}
                   left={0}
                   right={0}
-                  px={2}
-                  py={1}
+                  px={3}
+                  py={2}
                   fontWeight="bold"
                   bg="blackAlpha.300"
                   color="white"
-                  borderRadius={"0 0 14px 14px"}
+                  borderRadius={"14px 14px"}
+                  width={"100%"}
+                  height={"100%"}
+                  alignContent={"center"}
                 >
                   {" "}
-                  <Heading fontWeight={600} fontSize={"xl"}>
-                    Hair Conditioner
-                  </Heading>{" "}
+                  <Stack
+                    paddingTop={"auto"}
+                    marginTop={"auto"}
+                    textAlign={"initial"}
+                  >
+                    <Heading fontWeight={600} fontSize={"xl"}>
+                      Hair Conditioner
+                    </Heading>{" "}
+                  </Stack>
                   <Button
                     backgroundColor={"#D1B000"}
                     color={"white"}
-                    size={"sm"}
+                    size={"md"}
+                    style={{ minWidth: "150px" }}
                     _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
+                    borderRadius={"full"}
+
                   >
                     View More
                   </Button>{" "}

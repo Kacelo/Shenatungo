@@ -95,7 +95,6 @@ const Card: React.FC<CardProps> = ({
     window.open(url, "_blank");
   };
 
-
   const openGoogleMaps = () => {
     const url = `https://goo.gl/maps/ANjkEQtQzpX4naND7`;
     window.open(url, "_blank");
@@ -204,12 +203,15 @@ const Card: React.FC<CardProps> = ({
           <Button
             backgroundColor={"#D1B000"}
             color={"white"}
-            size={"sm"}
+            size={"md"}
+            style={{ minWidth: "150px" }}
             _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             onClick={openWhatsApp}
             rightIcon={
               <Image src={"/images/whatsapp.png"} alt="" height={5} width={5} />
             }
+            borderRadius={"full"}
+
           >
             Click To Open
           </Button>
@@ -218,9 +220,12 @@ const Card: React.FC<CardProps> = ({
           <Button
             backgroundColor={"#D1B000"}
             color={"white"}
-            size={"sm"}
+            size={"md"}
+            style={{ minWidth: "150px" }}
             _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             onClick={openEmailClient}
+            borderRadius={"full"}
+
           >
             Email Now
           </Button>
@@ -229,20 +234,26 @@ const Card: React.FC<CardProps> = ({
           <Button
             backgroundColor={"#D1B000"}
             color={"white"}
-            size={"sm"}
+            size={"md"}
+            style={{ minWidth: "150px" }}
             _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             onClick={openPhoneDialer}
+            borderRadius={"full"}
+
           >
             Call Now{" "}
           </Button>
         )}
-        {showLocation &&(
+        {showLocation && (
           <Button
             backgroundColor={"#D1B000"}
             color={"white"}
-            size={"sm"}
             _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             onClick={openGoogleMaps}
+            size={"md"}
+            style={{ minWidth: "150px" }}
+            borderRadius={"full"}
+
           >
             Open Map{" "}
           </Button>
