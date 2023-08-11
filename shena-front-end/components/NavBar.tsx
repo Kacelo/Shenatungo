@@ -22,6 +22,7 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 import Image from "next/image";
+import { BookingModal } from "./bookingModal";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -79,16 +80,8 @@ export default function Navbar() {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href={"#"}
-            display={{ base: "inline-flex", md: "none" }}
-          >
-            Book appointment
-          </Button>
+                <BookingModal />
+
           <Button
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}
@@ -309,8 +302,8 @@ const NAV_ITEMS: Array<NavItem> = [
     href: "/eShop",
   },
   {
-    label: "Gallery",
-    href: "gallery",
+    label: "About Us",
+    href: "/about-us",
   },
   {
     label: "Contact Us",

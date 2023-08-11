@@ -54,6 +54,44 @@ export const ProductCard = () => {
   );
 };
 
+export const BookingCard = () => {
+  return (
+    <Card w="xs" pos="relative" m="0.5rem">
+      <CardBody>
+        <Image
+          src="/images/barberSection/photo_5805664601931629398_y.jpg"
+          alt="Green double couch with wooden legs"
+          borderRadius="lg"
+        />
+        <Stack mt="6" spacing="3">
+          <Flex justify="space-between" align="center">
+            <Heading size="md">Matrix Hair Care</Heading>
+            <Flex color="brand.primaryDark" fontWeight="bold">
+              <Text fontSize="sm">N$</Text>
+              <Text fontSize="lg">100</Text>
+            </Flex>
+          </Flex>
+          <Text>
+            Conditioner for smoothness. Mega Sleek System, with Shea Butter.
+          </Text>
+          {/* <Rating/> */}
+        </Stack>
+      </CardBody>
+      {/* <Divider /> */}
+      <CardFooter>
+        <ButtonGroup spacing="2">
+          <Button variant="solid" colorScheme="blue">
+            Call Now
+          </Button>
+          <Button variant="ghost" colorScheme="blue">
+            Send Text Message
+          </Button>
+        </ButtonGroup>
+      </CardFooter>
+    </Card>
+  );
+};
+
 interface PopularProductsCardsProps {
   imageUrl: string;
   imageAlt: string;
@@ -76,9 +114,15 @@ export const ServicesCards: React.FC<PopularProductsCardsProps> = ({
       borderRadius={"14px"}
     >
       <CardBody>
-      <Box bg={useColorModeValue('white', 'gray.800')}>
-      <Image src={imageUrl} alt={imageAlt} borderRadius="7px" height={300} width={300}/>
-          </Box>
+        <Box bg={useColorModeValue("white", "gray.800")}>
+          <Image
+            src={imageUrl}
+            alt={imageAlt}
+            borderRadius="7px"
+            height={300}
+            width={300}
+          />
+        </Box>
         <Stack mt="6" spacing="3">
           <Flex justify="space-between">
             <Heading size="md">{productName}</Heading>
@@ -97,7 +141,5 @@ export const ServicesCards: React.FC<PopularProductsCardsProps> = ({
     </Card>
   );
 };
-
-
 
 // export default ProductCard

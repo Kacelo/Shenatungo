@@ -6,7 +6,8 @@ import {
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
-
+import { BookingModal } from "./bookingModal";
+const href = "#Services";
 export default function WithBackgroundImage() {
   return (
     <Flex
@@ -31,19 +32,12 @@ export default function WithBackgroundImage() {
           >
             Beauty is our duty
           </Text>
+
           <Stack direction={"row"}>
+            <BookingModal />
+
             <Button
-              bg={"#D1B000"}
-              // rounded={'full'}
-              color={"white"}
-              _hover={{ bg: "yellow.400" }}
-              size={"md"}
-              style={{ minWidth: "150px" }}
-              borderRadius={"full"}
-            >
-              Book Now
-            </Button>
-            <Button
+              as={"a"}
               bg={"whiteAlpha.300"}
               // rounded={'full'}
               color={"white"}
@@ -51,6 +45,7 @@ export default function WithBackgroundImage() {
               size={"md"}
               style={{ minWidth: "150px" }}
               borderRadius={"full"}
+              href={href}
             >
               View Our Services
             </Button>
