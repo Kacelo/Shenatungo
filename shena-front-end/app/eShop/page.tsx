@@ -122,28 +122,15 @@ import { FeaturedProducts } from "@/features/home/FeaturedProducts";
 // import { ENavbar } from "@/components/eNavbar/ENavBar";
 // import AppContextProvider from '@src/context/AppContext';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function eShop () {
   return (
     // <html lang="en">
-      // <body>
-        <CacheProvider>
-          <ChakraProvider theme={theme}>
-            {/* <AppContextProvider> */}
-              <ENavbar/>
+  <>
+        <ENavbar/>
               <Banner/>
               <TopCategories categories={[]} /> 
               <FeaturedProducts/>
-              {/* <FeaturedP */}
-              {/* // We are passing it as props inoder to fetch the data from topcategories*/}
-              {children}
-            {/* </AppContextProvider> */}
-          </ChakraProvider>
-        </CacheProvider>
-      // </body>
-    // </html>
+  </>
+          
   );
 }
