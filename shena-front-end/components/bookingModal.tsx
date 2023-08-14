@@ -17,6 +17,26 @@ import {
 } from "@chakra-ui/react";
 
 import { BookingCard } from "./ProductCard";
+const telephoneNumber = +26461221463;
+const openPhoneDialer = () => {
+  const url = `tel:${encodeURIComponent(telephoneNumber)}`;
+  window.location.href = url;
+};
+const openPhoneMessenger = () => {
+  // Code to open the phone messenger (e.g., SMS, default messaging app, etc.)
+  // This is a simplified example using a prompt to demonstrate the functionality
+  const message = "Hello, I would like to book an appointment.";
+
+  // Prompt the user to open the phone messenger with the specified number and message
+  const confirmation = window.confirm(
+    `Do you want to open the phone messenger and send a message to ${telephoneNumber}?`
+  );
+
+  if (confirmation) {
+    // Code to open the phone messenger with the specified number and message
+    window.open(`sms:${telephoneNumber}&body=${encodeURIComponent(message)}`);
+  }
+};
 export function BookingModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -46,14 +66,13 @@ export function BookingModal() {
 
             {/* <BookingCard /> */}
             <Image
-              src="/images/barberSection/photo_5805664601931629398_y.jpg"
+              src="/images/landingPage/booking.jpg"
               alt="Green double couch with wooden legs"
               borderRadius="lg"
             />
             <Stack mt="6" spacing="3">
               <Flex justify="space-between" align="center">
                 <Heading size="md">Selma Netumbu</Heading>
-                
               </Flex>
               <Text color={"gray.500"} fontWeight={100}>
                 Select one of the options below to talk to our receptionist
@@ -72,7 +91,7 @@ export function BookingModal() {
                 fontWeight={600}
                 color={"white"}
                 bg={"#D1B000"}
-                onClick={onClose}
+                onClick={openPhoneMessenger}
               >
                 Send Message
               </Button>
@@ -83,6 +102,7 @@ export function BookingModal() {
                 fontWeight={600}
                 color={"white"}
                 bg={"#D1B000"}
+                onClick={openPhoneDialer}
               >
                 Call Now
               </Button>

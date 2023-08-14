@@ -82,7 +82,7 @@ export default function Navbar() {
         >
                 <BookingModal />
 
-          <Button
+          {/* <Button
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
@@ -96,7 +96,7 @@ export default function Navbar() {
             borderRadius={"full"}
           >
             Book Appointment
-          </Button>
+          </Button> */}
         </Stack>
       </Flex>
 
