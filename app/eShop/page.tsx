@@ -115,7 +115,7 @@ import { theme } from '../theme'
 //     {/* <Gallery images={images} /> */}
 //     </>);
 //   }
-import 'swiper/swiper.min.css';
+// import 'swiper/swiper.min.css';
 import { Banner } from "@/features/home/Banner";
 import { TopCategories } from "@/features/home/TopCategories";
 import { FeaturedProducts } from "@/features/home/FeaturedProducts";
