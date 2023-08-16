@@ -136,7 +136,7 @@ const Card: React.FC<CardProps> = ({
             <Image
               src={imageSrc}
               style={{
-                width: "100%", height:'100%' ,
+                width: "100%", height:'' ,
                 objectFit: "cover",
                 borderRadius: "7px !important",
               }}
