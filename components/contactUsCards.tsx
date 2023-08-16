@@ -150,7 +150,7 @@ const Card: React.FC<CardProps> = ({
           justify={"center"}
           color={"white"}
           bg={useColorModeValue("white", "gray.700")}
-          style={{ width: "-webkit-fill-available !important" }}
+          style={{ width: "100%", }}
         >
           {imageSrc ? (
             <Image

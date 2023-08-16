@@ -109,8 +109,7 @@ export default function Intro() {
                 icon={<Icon as={IoTimeOutline} color={'yellow.500'} w={10} h={10} />}
                 iconBg={useColorModeValue('white.100', 'white.900')}
                 text={'Operating Times '}
-                details={"Monday - Friday: 09:00 - 19:00"}
-                FurtherDetails={"Sunday & Saturday: 09:00 - 15:00"}
+                details={"Monday - Sunday: 08:00 - 19:00"}
 
               />
               {/* <Feature

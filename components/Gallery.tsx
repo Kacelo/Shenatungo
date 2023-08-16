@@ -75,7 +75,7 @@ const Gallery: React.FC<GalleryProps> = ({
                       <Heading fontWeight={600} fontSize={"large"}>
                         {image.caption}{" "}
                       </Heading>{" "}
-                      <Heading fontSize={"4xl"}>N${image.price} </Heading>{" "}
+                      {image.price !==""? <Heading fontSize={"4xl"}>N${image.price} </Heading> : ""}
                     </Stack>
                   </VStack>
                 ) : (

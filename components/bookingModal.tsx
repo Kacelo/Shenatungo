@@ -66,13 +66,13 @@ export function BookingModal() {
 
             {/* <BookingCard /> */}
             <Image
-              src="/images/landingPage/booking.jpg"
+              src="/images/IMG_3100.JPG"
               alt="Green double couch with wooden legs"
               borderRadius="lg"
             />
             <Stack mt="6" spacing="3">
               <Flex justify="space-between" align="center">
-                <Heading size="md">Selma Netumbu</Heading>
+                <Heading size="md">Selma Nitembu.</Heading>
               </Flex>
               <Text color={"gray.500"} fontWeight={100}>
                 Select one of the options below to talk to our receptionist

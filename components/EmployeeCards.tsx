@@ -130,19 +130,19 @@ const Card: React.FC<CardProps> = ({
           justify={"center"}
           color={"white"}
           bg={useColorModeValue("white", "gray.700")}
-          style={{ width: "-webkit-fill-available !important" }}
+          style={{ width: "100%", height:'100%' }}
         >
           {imageSrc ? (
             <Image
               src={imageSrc}
               style={{
-                width: "-webkit-fill-available !important",
+                width: "100%", height:'100%' ,
                 objectFit: "cover",
                 borderRadius: "7px !important",
               }}
               alt=""
               height={236}
-              width={"-webkit-fill-available"}
+              width={"100%"}
             />
           ) : (
             ""

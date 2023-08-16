@@ -13,7 +13,7 @@ export default function WithBackgroundImage() {
     <Flex
       w={"full"}
       h={"100vh"}
-      backgroundImage={"url(/images/services/salon.jpeg)"}
+      backgroundImage={"url(/images/make-up-studio/photo_5924641007121578848_y.jpg)"}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
     >

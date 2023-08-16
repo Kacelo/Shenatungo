@@ -56,12 +56,7 @@ import {
           align={{ base: 'center', md: 'center' }}>
           <Text>© 2023 Shenatungo. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
-              <FaTwitter />
-            </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
-            </SocialButton>
+           
             <SocialButton label={'Instagram'} href={'https://www.instagram.com/shenatungo/'}>
               <FaInstagram />
             </SocialButton>

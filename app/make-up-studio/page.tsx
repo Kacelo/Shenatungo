@@ -19,6 +19,12 @@ export default function MakeUpStudio() {
       caption: ``,
       price: "",
     })),
+    ...Array.from({ length: 4 }, (_, index) => ({
+      src: `/images/make-up-studio/photo_59678221401641290${83 + index}_y.jpg`,
+      alt: `Image ${index + 3}`,
+      caption: ``,
+      price: "",
+    })),
   ];
   const employeesData = [
     {

@@ -44,8 +44,8 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
       <Stack align={"start"} spacing={2}>
         <Flex
           style={{
-            width: "-webkit-fill-available !important",
-            height: "-webkit-fill-available !important",
+            width: "100%",
+            height:"100%",
             borderRadius: "14px !important",
           }}
           w={236}
@@ -64,8 +64,8 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
               height={236}
               width={236}
               style={{
-                width: "-webkit-fill-available !important",
-                height: "-webkit-fill-available !important",
+                width: "100%",
+                height: "100%",
                 borderRadius: "7px !important",
               }}
             />
