@@ -8,7 +8,7 @@ export default function ContactUs() {
   const contactDetails = [
     {
       heading: "Send us a message",
-      subHeading: "++264813347480",
+      subHeading: "+264813347480",
       phoneNumber: "+264813347480",
       imageSrc: "/images/contact-us/whatsapp.png",
       whatsapp: true,
@@ -16,7 +16,7 @@ export default function ContactUs() {
     },
     {
       heading: "Talk to us over the phone",
-      subHeading: "++264813347480",
+      subHeading: "+264813347480",
       phoneNumber: "+264813347480",
       imageSrc: "/images/contact-us/iphone.png",
       whatsapp: false,
