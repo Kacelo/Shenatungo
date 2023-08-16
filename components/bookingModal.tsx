@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 
 import { BookingCard } from "./ProductCard";
-const telephoneNumber = +26461221463;
+const telephoneNumber = +264816240231;
 const openPhoneDialer = () => {
   const url = `tel:${encodeURIComponent(telephoneNumber)}`;
   window.location.href = url;
@@ -66,13 +66,13 @@ export function BookingModal() {
 
             {/* <BookingCard /> */}
             <Image
-              src="/images/IMG_3100.JPG"
+              src="/images/landingPage/booking.jpg"
               alt="Green double couch with wooden legs"
               borderRadius="lg"
             />
             <Stack mt="6" spacing="3">
               <Flex justify="space-between" align="center">
-                <Heading size="md">Selma Nitembu.</Heading>
+                <Heading size="md">Sheekupe Elago</Heading>
               </Flex>
               <Text color={"gray.500"} fontWeight={100}>
                 Select one of the options below to talk to our receptionist
