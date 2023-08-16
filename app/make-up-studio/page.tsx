@@ -28,28 +28,12 @@ export default function MakeUpStudio() {
   ];
   const employeesData = [
     {
-      name: "Lebby",
-      phoneNumber: "+264814504952",
-      socialMedia: "https://www.instagram.com/lebbyz_fade_cutz2023/",
-      imageSrc: "/images/barberSection/lebby2.jpeg",
-      instagramHandle: "@lebbyz_fade_cutz2023",
-      whatsapp: true,
-    },
-    {
-      name: "Penda",
-      phoneNumber: "+1 987-654-3210",
-      socialMedia: "",
-      imageSrc: "/images/barberSection/penda2.jpg",
-      instagramHandle: "@lebbyz_fade_cutz2023",
+      name: "Selma",
+      phoneNumber: "+264813347480",
+      socialMedia: "https://www.instagram.com/shenatungo/",
+      imageSrc: "/images/IMG_3100.JPG",
+      instagramHandle: "@shenatungo",
       whatsapp: false,
-    },
-    {
-      name: "Santos",
-      phoneNumber: "+264852924965",
-      socialMedia: "https://www.instagram.com/santos_di_barber/",
-      imageSrc: "/images/barberSection/santos2.jpg",
-      instagramHandle: "@santos_di_barber",
-      whatsapp: true,
     },
   ];
   const introductoryMessage = [
