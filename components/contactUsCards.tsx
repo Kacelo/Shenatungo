@@ -124,7 +124,7 @@ const Card: React.FC<CardProps> = ({
       window.open(`sms:${phoneNumber}&body=${encodeURIComponent(message)}`);
     }
   };
-  const telephoneNumber = +26461221463;
+  const telephoneNumber = +264816240231;
   const openPhoneDialer = () => {
     const url = `tel:${encodeURIComponent(telephoneNumber)}`;
     window.location.href = url;

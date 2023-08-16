@@ -8,16 +8,16 @@ export default function ContactUs() {
   const contactDetails = [
     {
       heading: "Send us a message",
-      subHeading: "+264814380939",
-      phoneNumber: "264814380939",
+      subHeading: "++264813347480",
+      phoneNumber: "+264813347480",
       imageSrc: "/images/contact-us/whatsapp.png",
       whatsapp: true,
       sendMail: false,
     },
     {
       heading: "Talk to us over the phone",
-      subHeading: "+264814380939",
-      phoneNumber: "264814380939",
+      subHeading: "++264813347480",
+      phoneNumber: "+264813347480",
       imageSrc: "/images/contact-us/iphone.png",
       whatsapp: false,
       sendMail: false,
@@ -25,9 +25,9 @@ export default function ContactUs() {
     },
     {
       heading: "Send us an email",
-      subHeading: "contactus@shena.com",
+      subHeading: "	tammukondjo@gmail.com",
       phoneNumber: "",
-      emailAddress: "contactus@shena.com",
+      emailAddress: "	tammukondjo@gmail.com",
       imageSrc: "",
       whatsapp: false,
       sendMail: true,
