@@ -38,7 +38,7 @@ export default function MakeUpStudio() {
   ];
   const introductoryMessage = [
     {
-      headingText: "Meet Our Talented Make Up Artists",
+      headingText: "Book an appointment with Selma",
       meetOur: "",
     },
   ];
