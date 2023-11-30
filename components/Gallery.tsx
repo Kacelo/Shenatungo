@@ -48,8 +48,8 @@ const Gallery: React.FC<GalleryProps> = ({
                   src={image.src}
                   alt={image.alt}
                   width="100%"
-                  borderRadius={"14px"}
-                />
+                  borderRadius={"18px"}
+                  />
                 {image.caption.length > 1 ? (
                   <VStack
                     align={"start"}

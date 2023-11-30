@@ -33,10 +33,10 @@ export const VisitShop = () => {
         <GridItem colSpan={2} bg="white" borderRadius={14}>
           <Box position="relative">
             <Image
-              src="https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2022/06/5-natural-hair-product-by-black-owned-brand.jpg?resize=500%2C500&ssl=1"
+              src="/images/landingPage/maintain-your-look/Neutral Minimalist Grid Color Mood Board Instagram Post.png"
               alt="dfdf"
               width="100%"
-              borderRadius={"14px"}
+              borderRadius={"18px"}
             />
 
 <VStack
@@ -50,7 +50,7 @@ export const VisitShop = () => {
                   fontWeight="bold"
                   bg="blackAlpha.300"
                   color="white"
-                  borderRadius={"14px 14px"}
+                  borderRadius={"18px 18px"}
                   width={"100%"}
                   height={"100%"}
                   alignContent={"center"}
@@ -62,7 +62,7 @@ export const VisitShop = () => {
                     textAlign={"initial"}
                   >
                     <Heading fontWeight={600} fontSize={"xl"}>
-                      Hair Conditioner
+                    NYANYU BY SELMA NITEMBU
                     </Heading>{" "}
                   </Stack>
                   <Button
@@ -92,8 +92,8 @@ export const VisitShop = () => {
                   src="https://img2.tradewheel.com/uploads/images/products/9/9/cheap-x-pression-synthetic-hair-braids-jumbo-x-pression-braids-heat-resistant-nigeria-hot-sale-crochet-braids1-0332269001591075345.jpg.webp"
                   alt="dfdf"
                   width="100%"
-                  borderRadius={"14px"}
-                />
+                  borderRadius={"18px"}
+                  />
           <VStack
                   align={"start"}
                   position="absolute"
@@ -140,8 +140,8 @@ export const VisitShop = () => {
                   src="https://legends-barber.com/wp-content/uploads/2022/10/Beard-Care-1024x1024-1.jpg"
                   alt="dfdf"
                   width="100%"
-                  borderRadius={"14px"}
-                />
+                  borderRadius={"18px"}
+                  />
           <VStack
                   align={"start"}
                   position="absolute"
@@ -187,8 +187,8 @@ export const VisitShop = () => {
                   src="https://www.carolsdaughter.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-cd-master-catalog/default/dw6c6794d5/ProductImages/Goddess-Strength/Carols-Daughter-Goddess-Strength-Conditioner-820645006621-1.jpg?sw=395&sh=395&sm=cut&sfrm=jpg&q=70"
                   alt="dfdf"
                   width="100%"
-                  borderRadius={"14px"}
-                />
+                  borderRadius={"18px"}
+                  />
                 <VStack
                   align={"start"}
                   position="absolute"
@@ -235,8 +235,8 @@ export const VisitShop = () => {
                   src="https://www.carolsdaughter.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-cd-master-catalog/default/dw58f5f6b6/ProductImages/Wash-Day/Wash-Day-Little-Mermaid/Little_Mermaid_PDP_Little_Mermaid_WDD_COND_061_Main_1000x1000_R4.jpg?sw=395&sh=395&sm=cut&sfrm=jpg&q=70"
                   alt="dfdf"
                   width="100%"
-                  borderRadius={"14px"}
-                />
+                  borderRadius={"18px"}
+                  />
 
                 <VStack
                   align={"start"}
