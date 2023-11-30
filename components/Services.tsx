@@ -37,8 +37,8 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
       overflow="hidden"
       p={2}
       style={{
-        borderRadius: "14px !important",
-        boxShadow: " rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",
+        borderRadius: "18px !important",
+        boxShadow: " 2px 4px 12px rgba(0,0,0,.08);",
       }}
     >
       <Stack align={"start"} spacing={2}>
@@ -46,7 +46,7 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
           style={{
             width: "100%",
             height:"100%",
-            borderRadius: "14px !important",
+            borderRadius: "18px !important",
           }}
           w={236}
           h={236}
@@ -66,7 +66,7 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
               style={{
                 width: "100%",
                 height: "100%",
-                borderRadius: "7px !important",
+                borderRadius: "8px !important",
               }}
             />
           ) : (
