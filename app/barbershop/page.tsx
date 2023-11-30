@@ -16,11 +16,11 @@ export default function Barbershop() {
     },
     {
       name: "Penda",
-      phoneNumber: "+1 987-654-3210",
+      phoneNumber: "+264813040365",
       socialMedia: "",
       imageSrc: "/images/barberSection/penda2.jpg",
       instagramHandle: "@lebbyz_fade_cutz2023",
-      whatsapp: false,
+      whatsapp: true,
     },
     {
       name: "Santos",
