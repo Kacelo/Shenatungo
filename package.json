@@ -15,28 +15,37 @@
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@next/font": "^13.4.4",
+    "@sanity/image-url": "^1.0.2",
+    "@stripe/stripe-js": "^2.2.0",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "@types/react-star-rating-component": "^1.4.1",
-    "autoprefixer": "10.4.14",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
     "component": "^1.1.0",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
     "framer-motion": "^10.12.16",
+    "lucide-react": "^0.294.0",
     "next": "13.4.4",
-    "next-sanity": "^5.2.7",
-    "postcss": "8.4.24",
+    "next-sanity": "^5.5.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-slick": "^0.29.0",
     "react-stars": "^2.2.5",
+    "stripe": "^14.7.0",
     "swiper": "^10.1.0",
-    "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "5.0.4",
+    "use-shopping-cart": "^3.1.8"
   },
   "devDependencies": {
-    "@types/react-stars": "^2.2.1"
+    "@types/react-stars": "^2.2.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.5"
   }
 }

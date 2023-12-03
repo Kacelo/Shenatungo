@@ -298,6 +298,31 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
+    label: "Shop",
+    children: [
+      {
+        label: "All Products",
+        subLabel: "",
+        href: "/barbershop",
+      },
+      {
+        label: "Hair Products",
+        subLabel: "",
+        href: "/salon",
+      },
+      {
+        label: "Beauty Products",
+        subLabel: "",
+        href: "/nail-department",
+      },
+      {
+        label: "Makeup Studio",
+        subLabel: "",
+        href: "/make-up-studio",
+      },
+    ],
+  },
+  {
     label: "Products",
     href: "/eShop",
   },
