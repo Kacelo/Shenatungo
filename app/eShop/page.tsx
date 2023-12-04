@@ -119,6 +119,10 @@ import { theme } from '../theme'
 import { Banner } from "@/features/home/Banner";
 import { TopCategories } from "@/features/home/TopCategories";
 import { FeaturedProducts } from "@/features/home/FeaturedProducts";
+import CHome from "@/features/shopcart";
+import YourComponent from "@/features/shopcart";
+import { OurCategory } from "@/features/home/OurCategory";
+import { SectionHeading } from "@/components/SectionHeading";
 // import { ENavbar } from "@/components/eNavbar/ENavBar";
 // import AppContextProvider from '@src/context/AppContext';
 
@@ -126,10 +130,14 @@ export default function eShop () {
   return (
     // <html lang="en">
   <>
-        <ENavbar/>
+        {/* <ENavbar/> */}
               <Banner/>
-              <TopCategories categories={[]} /> 
-              <FeaturedProducts/>
+              <OurCategory/>
+              {/* <TopCategories  />  */}
+              {/* <FeaturedProducts/> */}
+              <SectionHeading title=" New Arrivals" />
+              <YourComponent/>
+              {/* <Test/> */}
   </>
           
   );

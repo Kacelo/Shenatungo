@@ -27,9 +27,8 @@ export const Banner = () => {
             Beauty <br /> is our duty.
           </Heading>
           <Text fontSize={{ base: 'md', lg: 'lg' }} py="1rem" maxW="600px">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            autem voluptatem iure illo optio obcaecati accusantium fugiat
-            dolores tenetur
+          Embrace the allure of self-care and confidence. Beauty is our duty, 
+          an empowering journey to reveal your radiant essence.
           </Text>
           <Link href="/products">
             <Button
