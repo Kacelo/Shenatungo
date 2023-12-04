@@ -10,6 +10,16 @@ interface ProductProps {
   initialRating: number;
 }
 
+const handleOpenMail = () => {
+    const emailAddress = 'tammukondjo@gmail.com';
+    const subject = 'Beauti Products';
+    const body = 'I would like to your beauty products';
+    
+    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.open(mailtoLink);
+  };
+
 const ProductCard: React.FC<ProductProps> = ({
   imageUrl,
   productName,
@@ -44,8 +54,9 @@ const ProductCard: React.FC<ProductProps> = ({
           </Flex>
           <Text>{description}</Text>
           <StarRating totalStars={5} initialRating={initialRating} />
-          <Link href="/">
+          
             <Button
+            onClick={handleOpenMail}
               variant="outline"
               borderColor="brand.primary"
               color="brand.primary"
@@ -55,7 +66,7 @@ const ProductCard: React.FC<ProductProps> = ({
             >
               Buy Product
             </Button>
-          </Link>
+         
         </Stack>
       </CardBody>
     </Card>

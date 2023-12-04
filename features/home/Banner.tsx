@@ -7,6 +7,15 @@ import React from 'react';
 // bg = 'center / cover no-repeat url(/banner-img1.jpg)';
 
 export const Banner = () => {
+  const handleOpenMail = () => {
+    const emailAddress = 'tammukondjo@gmail.com';
+    const subject = 'Buy Product';
+    const body = 'Body of the email here';
+    
+    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.open(mailtoLink);
+  };
   return (
     <Box minH="600px">
       <Flex
@@ -32,6 +41,7 @@ export const Banner = () => {
           </Text>
           <Link href="/eShop">
             <Button
+            onClick={handleOpenMail}
               borderRadius="50px"
               minW="10rem"
               bgColor="brand.primary"
