@@ -12,8 +12,8 @@ interface ProductProps {
 
 const handleOpenMail = () => {
     const emailAddress = 'tammukondjo@gmail.com';
-    const subject = 'Beauti Products';
-    const body = 'I would like to your beauty products';
+    const subject = 'Beauty Products';
+    const body = 'I would like to oder your beauty products';
     
     const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
