@@ -41,7 +41,6 @@ export const Banner = () => {
           </Text>
           <Link href="/eShop">
             <Button
-            onClick={handleOpenMail}
               borderRadius="50px"
               minW="10rem"
               bgColor="brand.primary"
