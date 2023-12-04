@@ -62,7 +62,7 @@ const ProductCard: React.FC<ProductProps> = ({
   );
 };
 
-const YourComponent = () => {
+const BeautyComponent = () => {
   const products = [
     {
       imageUrl: '/images/make-up-studio/shop-products/photo_5960611581563879168_y.jpg',
@@ -115,4 +115,4 @@ const YourComponent = () => {
   );
 };
 
-export default YourComponent;
+export default BeautyComponent;

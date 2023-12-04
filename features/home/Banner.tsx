@@ -30,7 +30,7 @@ export const Banner = () => {
           Embrace the allure of self-care and confidence. Beauty is our duty, 
           an empowering journey to reveal your radiant essence.
           </Text>
-          <Link href="/products">
+          <Link href="/eShop">
             <Button
               borderRadius="50px"
               minW="10rem"

@@ -5,22 +5,22 @@ const OurCategory = () => {
   const data = [
     {
       imageUrl: '/images/make-up-studio/shop-products/Beauty Products.png',
-      link: '/speed-delivery',
+      link: '/Beauty-products/',
       text: "Beauty Products",
     },
     {
       imageUrl: '/images/Hair Products.png',
-      link: '/secure-payment',
+      link: '/Hair-products',
       text: "Hair Products",
     },
     {
       imageUrl: '/images/Nail Products.jpg',
-      link: '/customer-service',
+      link: '/Nali-products',
       text: "Nail Products",
     },
     {
       imageUrl: '/images/Grooming Products.jpg',
-      link: '/quality-products',
+      link: '/Grooming-products/',
       text: "Grooming Products",
     },
   ];

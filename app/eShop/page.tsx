@@ -123,6 +123,7 @@ import CHome from "@/features/shopcart";
 import YourComponent from "@/features/shopcart";
 import { OurCategory } from "@/features/home/OurCategory";
 import { SectionHeading } from "@/components/SectionHeading";
+import BeautyComponent from "@/features/shopcart";
 // import { ENavbar } from "@/components/eNavbar/ENavBar";
 // import AppContextProvider from '@src/context/AppContext';
 
@@ -136,7 +137,7 @@ export default function eShop () {
               {/* <TopCategories  />  */}
               {/* <FeaturedProducts/> */}
               <SectionHeading title=" New Arrivals" />
-              <YourComponent/>
+              <BeautyComponent/>
               {/* <Test/> */}
   </>
           
