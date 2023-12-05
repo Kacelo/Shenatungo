@@ -93,9 +93,7 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
             color={"white"}
            
             href={href}
-            _hover={{
-              bg: "yellow.400",
-            }}
+            _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             bg={"#D1B000"}
           >
             Explore More
