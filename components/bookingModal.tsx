@@ -47,7 +47,7 @@ export function BookingModal() {
         bg={"#D1B000"}
         // rounded={'full'}
         color={"white"}
-        _hover={{ bg: "yellow.400" }}
+        _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
         size={"md"}
         style={{ minWidth: "150px" }}
         borderRadius={"full"}

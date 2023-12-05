@@ -91,11 +91,12 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
             style={{ minWidth: "150px" }}
             borderRadius={"full"}           fontWeight={600}
             color={"white"}
-            bg={"#D1B000"}
+           
             href={href}
             _hover={{
               bg: "yellow.400",
             }}
+            bg={"#D1B000"}
           >
             Explore More
           </Button>
