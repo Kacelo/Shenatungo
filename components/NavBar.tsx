@@ -301,10 +301,10 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Products",
     href: "/eShop",
   },
-  {
-    label: "About Us",
-    href: "/about-us",
-  },
+  // {
+  //   label: "About Us",
+  //   href: "/about-us",
+  // },
   {
     label: "Contact Us",
     href: "/contact-us",

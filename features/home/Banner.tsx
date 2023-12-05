@@ -7,6 +7,15 @@ import React from 'react';
 // bg = 'center / cover no-repeat url(/banner-img1.jpg)';
 
 export const Banner = () => {
+  const handleOpenMail = () => {
+    const emailAddress = 'tammukondjo@gmail.com';
+    const subject = 'Buy Product';
+    const body = 'Body of the email here';
+    
+    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.open(mailtoLink);
+  };
   return (
     <Box minH="600px">
       <Flex
@@ -27,11 +36,10 @@ export const Banner = () => {
             Beauty <br /> is our duty.
           </Heading>
           <Text fontSize={{ base: 'md', lg: 'lg' }} py="1rem" maxW="600px">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            autem voluptatem iure illo optio obcaecati accusantium fugiat
-            dolores tenetur
+          Embrace the allure of self-care and confidence. Beauty is our duty, 
+          an empowering journey to reveal your radiant essence.
           </Text>
-          <Link href="/products">
+          <Link href="/eShop">
             <Button
               borderRadius="50px"
               minW="10rem"
@@ -48,7 +56,7 @@ export const Banner = () => {
             my="2rem"
             w={{ base: '300px', lg: '600px' }}
             h={{ base: '300px', lg: '590px' }}
-            bg="center / cover no-repeat url(images/products.png)" //we can resize to 500
+            bg="center / cover no-repeat url(images/ProductsBanner2.jpg)" //we can resize to 500
           />
           {/* <BannerSlider /> */}
         </Box>
