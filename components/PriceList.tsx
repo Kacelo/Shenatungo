@@ -33,7 +33,7 @@ const PriceList: React.FC<Hairstyle> = ({ images }) => {
         images={images}
         HeadingText="Explore Our Priced Services"
       />
-      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
+      {/* <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Button
           backgroundColor={"#D1B000"}
           color={"white"}
@@ -44,7 +44,7 @@ const PriceList: React.FC<Hairstyle> = ({ images }) => {
         >
           Download Price List
         </Button>
-      </Stack>
+      </Stack> */}
     </Container>
   );
 };
