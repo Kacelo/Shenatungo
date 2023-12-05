@@ -32,20 +32,19 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
     <Box
       maxW={{ base: "full", md: "275px" }}
       w={"full"}
-      borderWidth="1px"
-      borderRadius="sm"
+      borderRadius="18px"
       overflow="hidden"
       p={2}
       style={{
         borderRadius: "18px !important",
-        boxShadow: " 2px 4px 12px rgba(0,0,0,.08);",
       }}
+      boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}
     >
       <Stack align={"start"} spacing={2}>
         <Flex
           style={{
             width: "100%",
-            height:"100%",
+            height: "100%",
             borderRadius: "18px !important",
           }}
           w={236}
@@ -87,16 +86,16 @@ const Card = ({ heading, description, icon, href, imageSrc }: CardProps) => {
           <Button
             as={"a"}
             // display={{ base: "none", md: "inline-flex" }}
-             size={"md"}
+            size={"md"}
             style={{ minWidth: "150px" }}
-            borderRadius={"full"}           fontWeight={600}
+            borderRadius={"full"}
+            fontWeight={600}
             color={"white"}
-           
             href={href}
             _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
             bg={"#D1B000"}
           >
-            Explore More
+            View Service
           </Button>
         </Box>
       </Stack>
@@ -138,7 +137,7 @@ export default function Services() {
             href={"/salon"}
             imageSrc="/images/salon/landing2.jpg"
           />
-                  <Card
+          <Card
             heading={"Make Up Studio"}
             icon={<Icon as={FcManager} w={10} h={10} />}
             description={
@@ -157,7 +156,6 @@ export default function Services() {
             href={"nail-department"}
             imageSrc="/images/services/nails.jpeg"
           />
-  
         </Flex>
       </Container>
     </Box>
