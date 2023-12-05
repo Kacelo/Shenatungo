@@ -71,7 +71,7 @@ export const VisitShop = () => {
                 backgroundColor={"#D1B000"}
                 color={"white"}
                 size={"md"}
-                style={{ minWidth: "150px" }}
+                style={{ minWidth: "100px" }}
                 _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
                 borderRadius={"full"}
                 as={"a"}
@@ -128,7 +128,7 @@ export const VisitShop = () => {
                     backgroundColor={"#D1B000"}
                     color={"white"}
                     size={"md"}
-                    style={{ minWidth: "150px" }}
+                    style={{ minWidth: "100px" }}
                     _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
                     borderRadius={"full"}
                     as={"a"}
@@ -177,7 +177,7 @@ export const VisitShop = () => {
                     backgroundColor={"#D1B000"}
                     color={"white"}
                     size={"md"}
-                    style={{ minWidth: "150px" }}
+                    style={{ minWidth: "100px" }}
                     _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
                     borderRadius={"full"}
                     as={"a"}
@@ -228,7 +228,7 @@ export const VisitShop = () => {
                     backgroundColor={"#D1B000"}
                     color={"white"}
                     size={"md"}
-                    style={{ minWidth: "150px" }}
+                    style={{ minWidth: "100px" }}
                     _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
                     borderRadius={"full"}
                     as={"a"}
@@ -277,7 +277,7 @@ export const VisitShop = () => {
                     backgroundColor={"#D1B000"}
                     color={"white"}
                     size={"md"}
-                    style={{ minWidth: "150px" }}
+                    style={{ minWidth: "100px" }}
                     _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
                     borderRadius={"full"}
                     as={"a"}
@@ -290,12 +290,6 @@ export const VisitShop = () => {
             </GridItem>
           </Grid>{" "}
         </GridItem>
-        {/* <GridItem colSpan={2} bg='papayawhip' >
-          Main
-        </GridItem>
-        <GridItem colSpan={4} bg='tomato' >
-          Footer
-        </GridItem> */}
       </Grid>
     </Container>
   );
