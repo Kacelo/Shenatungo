@@ -37,7 +37,7 @@ export const PopularProductCards: React.FC<PopularProductsCardsProps> = ({
       pos="relative"
       m="0.5rem"
       boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}
-      borderRadius={"14px"}
+      borderRadius={"18px"}
     >
       <CardBody>
         <Image src={imageUrl} alt={imageAlt} borderRadius="7px" />
@@ -51,7 +51,16 @@ export const PopularProductCards: React.FC<PopularProductsCardsProps> = ({
       </CardBody>
       <CardFooter>
         <ButtonGroup>
-          <Button variant="solid" colorScheme="yellow" borderRadius={"full"}>
+          <Button
+            variant="solid"
+            bg="#D1B000"
+            borderRadius={"full"}
+            color={"white"}
+            as={"a"}
+            href={"/eShop"}
+            _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
+
+          >
             Visit Shop
           </Button>
         </ButtonGroup>
@@ -83,35 +92,42 @@ export const PopularProducts = () => {
       >
         <GridItem colSpan={1} bg="white" borderRadius={14}>
           <PopularProductCards
-            imageUrl="https://www.edgars.co.za/media/catalog/product/cache/1b5bd1c3f1a1f8dadfc68dc5bb5057ae/7/7/773602689477_translucent_3.3.jpg"
+            imageUrl="images/make-up-studio/shop-products/photo_5960611581563879164_y.jpg"
             imageAlt="product1"
-            productName="MAC"
-            productDescription="Studio Fix Pro Set + Blur Weightless Loose Powder"
+            productName="NYANYU BY SELMA NITEMBU"
+            productDescription="BLUSH"
           />
         </GridItem>
         <GridItem colSpan={1} bg="white" borderRadius={14}>
           <PopularProductCards
-            imageUrl="https://cdn.shopify.com/s/files/1/0273/5541/4580/products/TR-SoSilver-Cond-1L_large.png?v=1639505599"
+            imageUrl="images/make-up-studio/shop-products/photo_5960611581563879165_y.jpg"
             imageAlt="product1"
-            productName="Matrix Hair Care"
-            productDescription=" Conditioner for smoothness. Mega Sleek System, with Shea
-              Butter."
+            productName="NYANYU BY SELMA NITEMBU"
+            productDescription="CONCEALER"
           />
         </GridItem>
         <GridItem colSpan={1} bg="white" borderRadius={14}>
           <PopularProductCards
-            imageUrl="https://www.edgars.co.za/media/catalog/product/cache/1b5bd1c3f1a1f8dadfc68dc5bb5057ae/8/4/840026665667_1.jpg"
+            imageUrl="images/make-up-studio/shop-products/photo_5960611581563879166_y.jpg"
             imageAlt="product1"
-            productName=" Fenty Beauty"
-            productDescription=" Fenty Icon Refill Lipstick Case"
+            productName="NYANYU BY SELMA NITEMBU"
+            productDescription="WATERPROOF MATTE FOUNDATION"
           />
         </GridItem>
         <GridItem colSpan={1} bg="white" borderRadius={14}>
           <PopularProductCards
-            imageUrl="https://www.edgars.co.za/media/catalog/product/cache/1b5bd1c3f1a1f8dadfc68dc5bb5057ae/8/4/840026665667_1.jpg"
+            imageUrl="images/make-up-studio/shop-products/photo_5960611581563879167_y.jpg"
             imageAlt="product1"
-            productName=" Fenty Beauty"
-            productDescription=" Fenty Icon Refill Lipstick Case"
+            productName="NYANYU BY SELMA NITEMBU"
+            productDescription="HIGHLIGHT"
+          />
+        </GridItem>
+        <GridItem colSpan={1} bg="white" borderRadius={14}>
+          <PopularProductCards
+            imageUrl="images/make-up-studio/shop-products/photo_5960611581563879168_y.jpg"
+            imageAlt="product1"
+            productName="NYANYU BY SELMA NITEMBU"
+            productDescription="LOOSE POWDER"
           />
         </GridItem>
       </Grid>{" "}

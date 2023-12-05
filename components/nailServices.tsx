@@ -62,7 +62,7 @@ export const NailServices = () => {
           />
         </GridItem>
       </Grid>{" "}
-      <Stack
+      {/* <Stack
         spacing={4}
         as={Container}
         maxW={"3xl"}
@@ -78,7 +78,7 @@ export const NailServices = () => {
         >
           Download Price List
         </Button>
-      </Stack>
+      </Stack> */}
     </Container>
   );
 };

@@ -51,6 +51,8 @@ export const ProductCard = () => {
         </ButtonGroup>
       </CardFooter>
     </Card>
+    
+    
   );
 };
 
@@ -111,14 +113,14 @@ export const ServicesCards: React.FC<PopularProductsCardsProps> = ({
       pos="relative"
       m="0.5rem"
       boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}
-      borderRadius={"14px"}
+      borderRadius={"18px"}
     >
       <CardBody>
         <Box bg={useColorModeValue("white", "gray.800")}>
           <Image
             src={imageUrl}
             alt={imageAlt}
-            borderRadius="7px"
+            borderRadius="8px"
             height={300}
             width={300}
           />
