@@ -37,6 +37,9 @@ const ProductCard: React.FC<ProductProps> = ({
         "calc(25% - 1rem)",
       ]}
       m="0.5rem"
+      boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}
+      borderRadius={"18px"}
+
     >
       <CardBody>
         <Image
