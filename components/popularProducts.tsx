@@ -51,7 +51,16 @@ export const PopularProductCards: React.FC<PopularProductsCardsProps> = ({
       </CardBody>
       <CardFooter>
         <ButtonGroup>
-          <Button variant="solid" colorScheme="yellow" borderRadius={"full"}>
+          <Button
+            variant="solid"
+            bg="#D1B000"
+            borderRadius={"full"}
+            color={"white"}
+            as={"a"}
+            href={"/eShop"}
+            _hover={{ bg: "#EDF2F7", color: "#D1B000" }}
+
+          >
             Visit Shop
           </Button>
         </ButtonGroup>
