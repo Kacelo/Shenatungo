@@ -96,7 +96,7 @@ const Card: React.FC<CardProps> = ({
   };
   const openPhoneMessenger = () => {
     // Code to open the phone messenger (e.g., SMS, default messaging app, etc.)
-    // This is a simplified example using a prompt to demonstrate the functionality
+    // This is a simplified example using a prompt to demonstrate the functionality 
     const message = "Hello, I would like to book an appointment.";
 
     // Prompt the user to open the phone messenger with the specified number and message
